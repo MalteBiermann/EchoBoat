@@ -1,0 +1,59 @@
+@startuml
+title "EchoBoat Hauptplan"
+skinparam componentStyle rectangle
+
+component "Pixhawk 4" as PH
+component "PC"
+component "SBES"
+component "GNSS"
+component "IMU"
+component "Power Module achtern" as PMaft
+component "Power Module vorne" as PMbow
+component "Akkus Bb"
+component "Akkus Stb"
+component "Akkus vorne"
+component "Electronic Speed Controller Bb" as ESCBb
+component "Electronic Speed Controller Stb" as ESCStb
+component "Motor Bb"
+component "Motor Stb"
+component "RC Transmitter" as RCtrans
+
+component "RC Fernsteuerung" as RC
+component "Laptop"
+component "Wifi-Antenne 1" as Wifi1
+component "Wifi-Antenne 2" as Wifi2
+
+RCtrans <-right-> PH
+RC <..> RCtrans
+
+[Laptop] <-> Wifi1
+Wifi1 <..> Wifi2
+Wifi2 <-> PC
+
+PH <-right- PMbow
+PH <- PMaft
+PMaft <- [Akkus Stb]
+PMbow <-down- [Akkus vorne]
+
+
+PH <-up-> [PC]
+
+[SBES] -left-> [PC]
+[SBES] <- [Akkus vorne]
+[PC] <- [Akkus vorne]
+
+[PC] <- IMU
+
+PH <-up- [GNSS]
+[GNSS] -> [PC]
+
+PH -down-> ESCBb
+PH -down-> ESCStb
+
+ESCBb <-down- [Akkus Bb]
+ESCStb <-down- [Akkus Stb]
+
+[Motor Bb] <-up- ESCBb
+[Motor Stb] <-up- ESCStb
+
+@enduml
