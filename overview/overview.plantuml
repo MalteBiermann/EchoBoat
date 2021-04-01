@@ -31,9 +31,9 @@ Wifi1 <..> Wifi2
 Wifi2 <-> PC
 
 PH <-right- PMbow
-PH <- PMaft
+PH <-down- PMaft
 PMaft <- [Akkus Stb]
-PMbow <-down- [Akkus vorne]
+PMbow <- [Akkus vorne]
 
 
 PH <-up-> [PC]
