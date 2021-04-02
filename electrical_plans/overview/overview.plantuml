@@ -1,5 +1,5 @@
 @startuml
-title "EchoBoat Hauptplan"
+title "EchoBoat Systems Overview"
 skinparam componentStyle rectangle
 
 component "Pixhawk 4" as PH
@@ -7,21 +7,21 @@ component "PC"
 component "SBES"
 component "GNSS"
 component "IMU"
-component "Power Module achtern" as PMaft
-component "Power Module vorne" as PMbow
-component "Akkus Bb"
-component "Akkus Stb"
-component "Akkus vorne"
-component "Electronic Speed Controller Bb" as ESCBb
-component "Electronic Speed Controller Stb" as ESCStb
-component "Motor Bb"
-component "Motor Stb"
-component "RC Transmitter" as RCtrans
+component "Power Module STBD" as PMaft
+component "Power Module Bow" as PMbow
+component "Battery PS"
+component "Battery STBD"
+component "Battery bow"
+component "Electronic Speed Controller PS" as ESCPS
+component "Electronic Speed Controller STBD" as ESCSTBD
+component "Motor PS"
+component "Motor STBD"
+component "RC Receiver" as RCtrans
 
-component "RC Fernsteuerung" as RC
+component "Remote Controller" as RC
 component "Laptop"
-component "Wifi-Antenne 1" as Wifi1
-component "Wifi-Antenne 2" as Wifi2
+component "Wifi-Antenna 1" as Wifi1
+component "Wifi-Antenna 2" as Wifi2
 
 RCtrans <-right-> PH
 RC <..> RCtrans
@@ -32,28 +32,28 @@ Wifi2 <-> PC
 
 PH <-right- PMbow
 PH <-down- PMaft
-PMaft <- [Akkus Stb]
-PMbow <- [Akkus vorne]
+PMaft <- [Battery STBD]
+PMbow <- [Battery bow]
 
 
 PH <-up-> [PC]
 
 [SBES] -left-> [PC]
-[SBES] <- [Akkus vorne]
-[PC] <- [Akkus vorne]
+[SBES] <-down- [Battery bow]
+[PC] <-down- [Battery bow]
 
-[PC] <- IMU
+[PC] <-up- IMU
 
 PH <-up- [GNSS]
 [GNSS] -> [PC]
 
-PH -down-> ESCBb
-PH -down-> ESCStb
+PH -down-> ESCPS
+PH -down-> ESCSTBD
 
-ESCBb <-down- [Akkus Bb]
-ESCStb <-down- [Akkus Stb]
+ESCPS <-down- [Battery PS]
+ESCSTBD <-down- [Battery STBD]
 
-[Motor Bb] <-up- ESCBb
-[Motor Stb] <-up- ESCStb
+[Motor PS] <-up- ESCPS
+[Motor STBD] <-up- ESCSTBD
 
 @enduml
