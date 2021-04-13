@@ -13,7 +13,7 @@ Das Seafloor Echoboat ist eine Multi-Sensor Plattform für Bathymetrie / Gewäss
 ## Danksagung
 Ich bedanke mich bei Harry Wirth für das Vertrauen und die eingeräumten Freiheiten.
 
-Besonderen Dank für das Feedback und die praktische und technische Unterstützung an 
+Besonderen Dank für das Feedback und die praktische und technische Unterstützung geht an 
 - Thorsten Roelfs, 
 - Stefan Scheidweiler und 
 - Tobias Berndt. 
