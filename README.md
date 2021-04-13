@@ -1,8 +1,7 @@
 Dieses Repository ist in Bearbeitung! // Work in progress!
----
----
+===
 # EchoBoat Dokumentation
-Eine Darstellung der Systeme des Echoboats und dazugehöriger Anleitungen und Beschreibungen. Im Rahmen des Studiums der angewandten Geodäsie an der Jade HS.
+Eine Darstellung der Systeme und Peripherie des Echoboats und dazugehöriger Anleitungen und Beschreibungen. Im Rahmen des Studiums der angewandten Geodäsie an der Jade HS.
 Das Seafloor Echoboat ist eine Multi-Sensor Plattform für Bathymetrie / Gewässervermessung.
 ## Inhalt
 ### Pläne
@@ -38,4 +37,4 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 ```
-[1] https://github.com/MalteBiermann/EchoBoat/LICENSE
+[1]: https://github.com/MalteBiermann/EchoBoat/LICENSE
