@@ -6,54 +6,60 @@ component "Pixhawk 4" as PH
 component "PC"
 component "SBES"
 component "GNSS"
+component "GNSS Controller" as GNSSC
 component "IMU"
-component "Power Module STBD" as PMaft
+component "Power Module STBD" as PMstbd
 component "Power Module Bow" as PMbow
 component "Battery PS"
 component "Battery STBD"
-component "Battery bow"
-component "Electronic Speed Controller PS" as ESCPS
-component "Electronic Speed Controller STBD" as ESCSTBD
+component "Battery Bow"
+component "Electronic Speed Controller PS" as ESCps
+component "Electronic Speed Controller STBD" as ESCstbd
 component "Motor PS"
 component "Motor STBD"
 component "RC Receiver" as RCtrans
 
-component "Remote Controller" as RC
-component "Laptop"
-component "Wifi-Antenna 1" as Wifi1
+package "Land"{
+    component "Remote Controller" as RC
+    component "Laptop"
+    component "Wifi-Antenna 1" as Wifi1
+}
+
 component "Wifi-Antenna 2" as Wifi2
 
-RCtrans <-right-> PH
-RC <..> RCtrans
+RCtrans <-right-> PH :SBus
+RC <.down.> RCtrans :2.4GHz
 
-[Laptop] <-> Wifi1
-Wifi1 <..> Wifi2
-Wifi2 <-> PC
+Wifi1 <-left-> [Laptop]
+Wifi1 <.> Wifi2 :2.4GHz
+Wifi2 <-down-> PC
 
 PH <-right- PMbow
-PH <-down- PMaft
-PMaft <- [Battery STBD]
-PMbow <- [Battery bow]
+
+PMbow <- [Battery Bow]
+PH <-down- PMstbd
+PMstbd <-down- [Battery STBD]
 
 
-PH <-up-> [PC]
+PH <-up-> [PC] :RS-232
 
-[SBES] -left-> [PC]
-[SBES] <-down- [Battery bow]
-[PC] <-down- [Battery bow]
+[SBES] -left-> [PC] :RS-232
+[SBES] <-down- [PMbow]
+[PC] <-down- [PMbow]
 
-[PC] <-up- IMU
+[PC] <-up- IMU :RS-232
 
-PH <-up- [GNSS]
-[GNSS] -> [PC]
+PH <-up- [GNSS] :RS-232
+[GNSS] -down-> [PC] :RS-232
+[GNSS] <.> GNSSC :BT
 
-PH -down-> ESCPS
-PH -down-> ESCSTBD
+PH -down-> ESCps :PWM
+PH -down-> ESCstbd :PWM
 
-ESCPS <-down- [Battery PS]
-ESCSTBD <-down- [Battery STBD]
+ESCps <-down- [Battery PS]
+ESCstbd <-left- [PMstbd]
 
-[Motor PS] <-up- ESCPS
-[Motor STBD] <-up- ESCSTBD
+[Motor PS] <-up- ESCps
+[Motor STBD] <-up- ESCstbd
 
 @enduml
