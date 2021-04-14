@@ -1,8 +1,8 @@
 Dieses Repository ist in Bearbeitung! // Work in progress!
 ===
 # EchoBoat Dokumentation
-Ein manuell gesteuertes USV wird zu einem autonomen Fahrzeug (ASV) für bathymetrische Aufgaben umgerüstet. Das Seafloor Echoboat ist eine Multi-Sensor Plattform für Bathymetrie / Gewässervermessung. Dieses Projekt ist eine Darstellung der Systeme und Peripherie des Echoboats und dazugehöriger Anleitungen und Beschreibungen.  Im Rahmen der Praxisphase des Studiums der angewandten Geodäsie an der Jade HS Oldenburg.
-
+Ein manuell gesteuertes USV wird zu einem autonomen Fahrzeug (ASV) für bathymetrische Aufgaben umgerüstet. Das Seafloor Echoboat-160 ist eine Multi-Sensor Plattform für Bathymetrie / Gewässervermessung. Dieses Projekt ist eine Darstellung der Systeme und Peripherie des Echoboats und dazugehöriger Anleitungen und Beschreibungen. Im Rahmen der Praxisphase des Studiums der angewandten Geodäsie an der Jade HS Oldenburg.
+![Echoboat](./img/echoboat3.jpg)
 ## Inhalt
 ### Pläne
 - Übersichtsplan
@@ -16,7 +16,7 @@ Ein manuell gesteuertes USV wird zu einem autonomen Fahrzeug (ASV) für bathymet
 - Antrieb
     - Holybro Power Module PM02 (2*)
     - ESC (2*)
-    - Motore (2*)
+    - Motore Bluerov Thruster T100 (2*)
 - Energie
     - LiPo 4S1P 14000mAh (2*2) Turnigy für Antrieb
     - LiPo 6S1P 22000mAh (2*) Venom für Vermessung
