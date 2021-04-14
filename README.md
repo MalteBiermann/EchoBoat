@@ -1,14 +1,42 @@
 Dieses Repository ist in Bearbeitung! // Work in progress!
 ===
 # EchoBoat Dokumentation
-Eine Darstellung der Systeme und Peripherie des Echoboats und dazugehöriger Anleitungen und Beschreibungen. Im Rahmen des Studiums der angewandten Geodäsie an der Jade HS.
-Das Seafloor Echoboat ist eine Multi-Sensor Plattform für Bathymetrie / Gewässervermessung.
+Ein manuell gesteuertes USV wird zu einem autonomen Fahrzeug (ASV) für bathymetrische Aufgaben umgerüstet. Das Seafloor Echoboat ist eine Multi-Sensor Plattform für Bathymetrie / Gewässervermessung. Dieses Projekt ist eine Darstellung der Systeme und Peripherie des Echoboats und dazugehöriger Anleitungen und Beschreibungen.  Im Rahmen der Praxisphase des Studiums der angewandten Geodäsie an der Jade HS Oldenburg.
+
 ## Inhalt
 ### Pläne
 - Übersichtsplan
 - Steuerung
 - Sensoren
 ### Beschreibungen
+#### Komponenten
+- Steuerung
+    - FrySky Empfänger (Transmitter)
+    - Holybro Pixhawk 4
+- Antrieb
+    - Holybro Power Module PM02 (2*)
+    - ESC (2*)
+    - Motore (2*)
+- Energie
+    - LiPo 4S1P 14000mAh (2*2) Turnigy für Antrieb
+    - LiPo 6S1P 22000mAh (2*) Venom für Vermessung
+- Sensoren
+    - Lidar (???)
+    - ODOM Einstrahl-Echolot
+    - SBG Ellipse IMU
+    - Leica GNSS GS15
+    - Leica GNSS Controller
+    - Webcam Logitech C270
+- Industrie-PC
+- An Land
+    - FrSky Fernsteuerung
+    - Wlan-Antenne Mikrotik
+    - Laptop
+- Lade-Segment
+    - ISDT P30
+    - ISDT SP3060
+    - ISDT FD-200
+
 ### Anleitungen
 ## Danksagung
 Vielen Dank für die eingeräumten Freiheiten, das Feedback und die praktische und technische Unterstützung an 
