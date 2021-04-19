@@ -11,8 +11,10 @@ component "GNSS Controller" as GNSSC
 ' component "IMU"
 ' component "LIDAR"
 ' component "GNSS 2" as GNSS2
+together {
 component "Power Module STBD" as PMstbd
 component "Power Module Bow" as PMbow
+}
 ' component "Battery PS"
 ' component "Battery STBD"
 ' component "Battery Bow"
@@ -22,7 +24,7 @@ component "Motor PS"
 component "Motor STBD"
 component "RC Receiver" as RCtrans
 
-package "Land"{
+package "Control Station"{
     component "Remote Controller" as RC
     component "Laptop"
     component "Wifi-Antenna 1" as Wifi1
@@ -36,17 +38,15 @@ Wifi1 <-left-> [Laptop]
 Wifi1 <..> Wifi2
 Wifi2 <-down-> PC
 
-PH <-right- PMbow
+PMbow -left-> PH 
 
-' [Battery Bow] -> PMbow
-PH <-down- PMstbd
-' [Battery STBD] -up-> PMstbd
+
+PMstbd -left-> PH
+
 
 PH <-up-> [PC]
 
 [SBES] -left-> [PC]
-' [PMbow] -up-> [SBES]
-' [PMbow] -up-> [PC]
 
 ' IMU -down-> [PC]
 ' GNSS2 -d-> LIDAR

@@ -12,11 +12,16 @@ component "SBES"
 component "Power Module STBD" as PMstbd
 component "Power Module Bow" as PMbow
 component "Bus bar" as Busbar
+
 component "Battery PS"
 component "Battery STBD"
 component "Battery Bow"
+
+together {
 component "Electronic Speed Controller PS" as ESCps
 component "Electronic Speed Controller STBD" as ESCstbd
+}
+
 component "Motor PS"
 component "Motor STBD"
 component "RC Receiver" as RCtrans
@@ -47,8 +52,6 @@ PMstbd -left-> PH
 
 ESCps -down-> [Motor PS]
 ESCstbd -down-> [Motor STBD]
-
-ESCstbd -[hidden]left-> ESCps
 
 ' hide @unlinked
 @enduml
