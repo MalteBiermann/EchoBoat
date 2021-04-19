@@ -49,7 +49,6 @@ ESCps -down-> [Motor PS]
 ESCstbd -down-> [Motor STBD]
 
 ESCstbd -[hidden]left-> ESCps
-' [Battery STBD] -[hidden]left-> [Motor PS]
 
-hide @unlinked
+' hide @unlinked
 @enduml
