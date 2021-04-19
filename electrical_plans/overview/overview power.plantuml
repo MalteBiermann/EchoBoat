@@ -1,0 +1,55 @@
+@startuml
+title "EchoBoat Power Distribution Overview"
+skinparam componentStyle rectangle
+skinparam linetype ortho
+
+component "Pixhawk 4" as PH
+component "PC"
+component "SBES"
+' component "IMU"
+' component "LIDAR"
+' component "GNSS 2" as GNSS2
+component "Power Module STBD" as PMstbd
+component "Power Module Bow" as PMbow
+component "Bus bar" as Busbar
+component "Battery PS"
+component "Battery STBD"
+component "Battery Bow"
+component "Electronic Speed Controller PS" as ESCps
+component "Electronic Speed Controller STBD" as ESCstbd
+component "Motor PS"
+component "Motor STBD"
+component "RC Receiver" as RCtrans
+
+component "Wifi-Antenna 2" as Wifi2
+
+PH -l-> RCtrans
+
+[Battery Bow] -l-> PMbow
+
+PMbow -up-> Busbar
+PMbow -down-> PH
+
+Busbar -u-> PC
+Busbar -l-> SBES
+Busbar -r-> Wifi2
+
+' Busbar .> LIDAR
+' Busbar .> GNSS2
+' Busbar .> IMU
+
+PMstbd -left-> PH
+
+
+[Battery STBD] --up-> PMstbd
+[Battery PS] -up-> ESCps
+[PMstbd] --> ESCstbd
+
+ESCps -down-> [Motor PS]
+ESCstbd -down-> [Motor STBD]
+
+ESCstbd -[hidden]left-> ESCps
+' [Battery STBD] -[hidden]left-> [Motor PS]
+
+hide @unlinked
+@enduml

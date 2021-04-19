@@ -5,7 +5,10 @@ Ein manuell gesteuertes USV wird zu einem autonomen Fahrzeug (ASV) für bathymet
 ![Echoboat](./img/echoboat3.jpg)
 ## Inhalt
 ### Pläne
-- Übersichtsplan
+- Übersicht
+    - Gesamt
+    - Stromverteilung
+    - Daten
 - Steuerung
 - Sensoren
 ### Beschreibungen

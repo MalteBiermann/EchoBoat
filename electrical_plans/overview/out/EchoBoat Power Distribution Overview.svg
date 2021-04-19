@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="569px" preserveAspectRatio="none" style="width:609px;height:569px;" version="1.1" viewBox="0 0 609 569" width="609px" zoomAndPan="magnify"><defs><filter height="300%" id="ftsx3w31zu5l0" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="309" x="143.75" y="18.6855">EchoBoat Power Distribution Overview</text><!--MD5=[adec32fe9ea263a4fdfa628539becf82]
+entity PH--><rect fill="#FEFECE" filter="url(#ftsx3w31zu5l0)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="82" x="267.5" y="323.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="277.5" y="348.1738">Pixhawk 4</text><!--MD5=[7b283ce894c5928581d5380ce71c9d62]
+entity PC--><rect fill="#FEFECE" filter="url(#ftsx3w31zu5l0)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="39" x="289" y="29.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="19" x="299" y="54.1738">PC</text><!--MD5=[1852beabfba7d4e0411063760e6a4c5f]
+entity SBES--><rect fill="#FEFECE" filter="url(#ftsx3w31zu5l0)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="56" x="182.5" y="127.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="36" x="192.5" y="152.1738">SBES</text><!--MD5=[cd2a6ff59c598da4d68ca989d77310bd]
+entity PMstbd--><rect fill="#FEFECE" filter="url(#ftsx3w31zu5l0)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="150" x="384.5" y="323.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="394.5" y="348.1738">Power Module STBD</text><!--MD5=[bcbc71b00e100886db05cabc592e03d4]
+entity PMbow--><rect fill="#FEFECE" filter="url(#ftsx3w31zu5l0)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="139" x="239" y="225.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="249" y="250.1738">Power Module Bow</text><!--MD5=[1d25f84b73d88d4c067b2aea521e9513]
+entity Busbar--><rect fill="#FEFECE" filter="url(#ftsx3w31zu5l0)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="69" x="274" y="127.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="284" y="152.1738">Bus bar</text><!--MD5=[c183623ca0fd6a4bcca4e10754028029]
+entity Battery PS--><rect fill="#FEFECE" filter="url(#ftsx3w31zu5l0)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="87" x="12" y="519.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="22" y="544.1738">Battery PS</text><!--MD5=[31309c059333adf40194642b2c226d4c]
+entity Battery STBD--><rect fill="#FEFECE" filter="url(#ftsx3w31zu5l0)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="106" x="491.5" y="519.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="501.5" y="544.1738">Battery STBD</text><!--MD5=[97e5d41a600981e35cf9bc1e1ecccd94]
+entity Battery Bow--><rect fill="#FEFECE" filter="url(#ftsx3w31zu5l0)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="95" x="413" y="225.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="423" y="250.1738">Battery Bow</text><!--MD5=[19486d78f4cef3a1108b73df2c2b7531]
+entity ESCps--><rect fill="#FEFECE" filter="url(#ftsx3w31zu5l0)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="215" x="7" y="421.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="195" x="17" y="446.1738">Electronic Speed Controller PS</text><!--MD5=[7f1af9d08ed3ec176d7ae880fc4f43f3]
+entity ESCstbd--><rect fill="#FEFECE" filter="url(#ftsx3w31zu5l0)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="234" x="257.5" y="421.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="214" x="267.5" y="446.1738">Electronic Speed Controller STBD</text><!--MD5=[2dd8d15184fa354d84e225875cf1e3d5]
+entity Motor PS--><rect fill="#FEFECE" filter="url(#ftsx3w31zu5l0)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="78" x="134.5" y="519.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="144.5" y="544.1738">Motor PS</text><!--MD5=[4dfc217aa0c9521d05b4cff83f6a2287]
+entity Motor STBD--><rect fill="#FEFECE" filter="url(#ftsx3w31zu5l0)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="97" x="326" y="519.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="336" y="544.1738">Motor STBD</text><!--MD5=[db0e69463f977d4a793e34313cff7aab]
+entity RCtrans--><rect fill="#FEFECE" filter="url(#ftsx3w31zu5l0)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="100" x="132.5" y="323.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="142.5" y="348.1738">RC Receiver</text><!--MD5=[7849a47e91d80dd565fbbc1e3f19b043]
+entity Wifi2--><rect fill="#FEFECE" filter="url(#ftsx3w31zu5l0)" height="37.6094" style="stroke:#000000;stroke-width:1.5;" width="113" x="378" y="127.6406"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="388" y="152.1738">Wifi-Antenna 2</text><!--MD5=[72b7250edb1728418e6c75daf02af510]
+reverse link RCtrans to PH--><path d="M237.66,342.6406 C237.66,342.6406 267.41,342.6406 267.41,342.6406 " fill="none" id="RCtrans-backto-PH" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="232.66,342.6406,241.66,346.6406,237.66,342.6406,241.66,338.6406,232.66,342.6406" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[eea68d401f50dd3b36b05b23f2a729c0]
+reverse link PMbow to Battery Bow--><path d="M383.27,244.6406 C383.27,244.6406 412.87,244.6406 412.87,244.6406 " fill="none" id="PMbow-backto-Battery Bow" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="378.27,244.6406,387.27,248.6406,383.27,244.6406,387.27,240.6406,378.27,244.6406" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[aa17e9d00a693d68c50d8cfbf1274a5c]
+reverse link Busbar to PMbow--><path d="M308.5,171.0006 C308.5,171.0006 308.5,225.3206 308.5,225.3206 " fill="none" id="Busbar-backto-PMbow" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="308.5,166.0006,304.5,175.0006,308.5,171.0006,312.5,175.0006,308.5,166.0006" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[62052104aaaafe5c89738fae69b27a29]
+link PMbow to PH--><path d="M308.5,264.0006 C308.5,264.0006 308.5,318.3206 308.5,318.3206 " fill="none" id="PMbow-to-PH" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="308.5,323.3206,312.5,314.3206,308.5,318.3206,304.5,314.3206,308.5,323.3206" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[78d45601ab26c32737954b5e85e07305]
+reverse link PC to Busbar--><path d="M308.5,73.0006 C308.5,73.0006 308.5,127.3206 308.5,127.3206 " fill="none" id="PC-backto-Busbar" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="308.5,68.0006,304.5,77.0006,308.5,73.0006,312.5,77.0006,308.5,68.0006" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4c0c4126c8098f4db27ab99191ea62d8]
+reverse link SBES to Busbar--><path d="M243.58,146.6406 C243.58,146.6406 273.79,146.6406 273.79,146.6406 " fill="none" id="SBES-backto-Busbar" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="238.58,146.6406,247.58,150.6406,243.58,146.6406,247.58,142.6406,238.58,146.6406" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[769cfa08866909f5b3d2d5a8e06d90fe]
+link Busbar to Wifi2--><path d="M343.26,146.6406 C343.26,146.6406 372.59,146.6406 372.59,146.6406 " fill="none" id="Busbar-to-Wifi2" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="377.59,146.6406,368.59,142.6406,372.59,146.6406,368.59,150.6406,377.59,146.6406" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7ada3e450dbd53f00f5a525a5a661639]
+reverse link PH to PMstbd--><path d="M354.76,342.6406 C354.76,342.6406 384.32,342.6406 384.32,342.6406 " fill="none" id="PH-backto-PMstbd" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="349.76,342.6406,358.76,346.6406,354.76,342.6406,358.76,338.6406,349.76,342.6406" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2978800d8213c3616e7aa5cd9dc6b8ee]
+reverse link PMstbd to Battery STBD--><path d="M513,366.7906 C513,366.7906 513,519.4106 513,519.4106 " fill="none" id="PMstbd-backto-Battery STBD" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="513,361.7906,509,370.7906,513,366.7906,517,370.7906,513,361.7906" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[95a8212c273850b7880a0cb3fef50419]
+reverse link ESCps to Battery PS--><path d="M55.5,465.0006 C55.5,465.0006 55.5,519.3206 55.5,519.3206 " fill="none" id="ESCps-backto-Battery PS" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="55.5,460.0006,51.5,469.0006,55.5,465.0006,59.5,469.0006,55.5,460.0006" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[344c51ad62a3253c82bc49540fd25021]
+link PMstbd to ESCstbd--><path d="M438,362.0006 C438,362.0006 438,416.3206 438,416.3206 " fill="none" id="PMstbd-to-ESCstbd" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="438,421.3206,442,412.3206,438,416.3206,434,412.3206,438,421.3206" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5c419c2b96c3a64b0e05e3e8da807669]
+link ESCps to Motor PS--><path d="M173.5,460.0006 C173.5,460.0006 173.5,514.3206 173.5,514.3206 " fill="none" id="ESCps-to-Motor PS" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="173.5,519.3206,177.5,510.3206,173.5,514.3206,169.5,510.3206,173.5,519.3206" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8567aa3326b77f9de6ebf92464a71a49]
+link ESCstbd to Motor STBD--><path d="M374.5,460.0006 C374.5,460.0006 374.5,514.3206 374.5,514.3206 " fill="none" id="ESCstbd-to-Motor STBD" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="374.5,519.3206,378.5,510.3206,374.5,514.3206,370.5,510.3206,374.5,519.3206" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[790a220b504a5890e9ca648f077022f4]
+reverse link ESCps to ESCstbd--><!--MD5=[2fbb44d883641a910091624a6fa02ba3]
+@startuml
+title "EchoBoat Power Distribution Overview"
+skinparam componentStyle rectangle
+skinparam linetype ortho
+
+component "Pixhawk 4" as PH
+component "PC"
+component "SBES"
+' component "IMU"
+' component "LIDAR"
+' component "GNSS 2" as GNSS2
+component "Power Module STBD" as PMstbd
+component "Power Module Bow" as PMbow
+component "Bus bar" as Busbar
+component "Battery PS"
+component "Battery STBD"
+component "Battery Bow"
+component "Electronic Speed Controller PS" as ESCps
+component "Electronic Speed Controller STBD" as ESCstbd
+component "Motor PS"
+component "Motor STBD"
+component "RC Receiver" as RCtrans
+
+component "Wifi-Antenna 2" as Wifi2
+
+PH -l-> RCtrans
+
+[Battery Bow] -l-> PMbow
+
+PMbow -up-> Busbar
+PMbow -down-> PH
+
+Busbar -u-> PC
+Busbar -l-> SBES
+Busbar -r-> Wifi2
+
+' Busbar .> LIDAR
+' Busbar .> GNSS2
+' Busbar .> IMU
+
+PMstbd -left-> PH
+
+
+[Battery STBD] - -up-> PMstbd
+[Battery PS] -up-> ESCps
+[PMstbd] - -> ESCstbd
+
+ESCps -down-> [Motor PS]
+ESCstbd -down-> [Motor STBD]
+
+ESCstbd -[hidden]left-> ESCps
+' [Battery STBD] -[hidden]left-> [Motor PS]
+
+hide @unlinked
+@enduml
+
+@startuml
+title "EchoBoat Power Distribution Overview"
+skinparam componentStyle rectangle
+skinparam linetype ortho
+
+component "Pixhawk 4" as PH
+component "PC"
+component "SBES"
+component "Power Module STBD" as PMstbd
+component "Power Module Bow" as PMbow
+component "Bus bar" as Busbar
+component "Battery PS"
+component "Battery STBD"
+component "Battery Bow"
+component "Electronic Speed Controller PS" as ESCps
+component "Electronic Speed Controller STBD" as ESCstbd
+component "Motor PS"
+component "Motor STBD"
+component "RC Receiver" as RCtrans
+
+component "Wifi-Antenna 2" as Wifi2
+
+PH -l-> RCtrans
+
+[Battery Bow] -l-> PMbow
+
+PMbow -up-> Busbar
+PMbow -down-> PH
+
+Busbar -u-> PC
+Busbar -l-> SBES
+Busbar -r-> Wifi2
+
+
+PMstbd -left-> PH
+
+
+[Battery STBD] - -up-> PMstbd
+[Battery PS] -up-> ESCps
+[PMstbd] - -> ESCstbd
+
+ESCps -down-> [Motor PS]
+ESCstbd -down-> [Motor STBD]
+
+ESCstbd -[hidden]left-> ESCps
+
+hide @unlinked
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 11:25:05 CET 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: de
+Country: DE
+--></g></svg>
