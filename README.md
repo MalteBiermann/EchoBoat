@@ -1,56 +1,72 @@
-Dieses Repository ist in Bearbeitung! // Work in progress!
-===
+# Dieses Repository ist in Bearbeitung! // Work in progress!
+
 # EchoBoat Dokumentation
-Ein manuell gesteuertes USV wird zu einem autonomen Fahrzeug (ASV) für bathymetrische Aufgaben umgerüstet. Das Seafloor Echoboat-160 ist eine Multi-Sensor Plattform für Bathymetrie / Gewässervermessung. Dieses Projekt ist eine Darstellung der Systeme und Peripherie des Echoboats und dazugehöriger Anleitungen und Beschreibungen. Im Rahmen der Praxisphase des Studiums der angewandten Geodäsie an der Jade HS Oldenburg.
+Dieses Repository enthält eine Darstellung der Systeme und Peripherie des Echoboats. Für den Betrieb in der Vermessung soll hier eine Sammlung relevanter Notizen, Anleitungen und Beschreibungen im Rahmen der Praxisphase des Studiums der angewandten Geodäsie an der Jade HS Oldenburg entstehen.   
+Ein manuell gesteuertes USV (Seafloor Echoboat) wird zu einem autonomen Fahrzeug (ASV) für bathymetrische Aufgaben umgerüstet. Das Seafloor Echoboat-160 ist eine Multi-Sensor Plattform für Bathymetrie / Gewässervermessung.
+
 ![Echoboat](./img/echoboat3.jpg)
+
 ## Inhalt
+
 ### Pläne
-- Übersicht
-    - Gesamt
-    - Stromverteilung
-    - Daten
+
+- [Übersicht](electrical_plans/overview/overview.md)
+  - Stromverteilung
+  - Daten
 - Steuerung
 - Sensoren
+
 ### Beschreibungen
+
 #### Komponenten
+
 - Steuerung
-    - FrySky Empfänger (Transmitter)
-    - Holybro Pixhawk 4
+  - FrySky Empfänger (Transmitter)
+  - Holybro Pixhawk 4
 - Antrieb
-    - Holybro Power Module PM02 (2*)
-    - ESC (2*)
-    - Motore Bluerov Thruster T100 (2*)
+  - Holybro Power Module PM02 (2\*)
+  - ESC (2\*)
+  - Motore Bluerov Thruster T100 (2\*)
 - Energie
-    - LiPo 4S1P 14000mAh (2*2) Turnigy für Antrieb
-    - LiPo 6S1P 22000mAh (2*) Venom für Vermessung
+  - LiPo 4S1P 14000mAh (2\*2) Turnigy für Antrieb
+  - LiPo 6S1P 22000mAh (2\*) Venom für Vermessung
 - Sensoren
-    - Lidar (???)
-    - ODOM Einstrahl-Echolot
-    - SBG Ellipse IMU
-    - Leica GNSS GS15
-    - Leica GNSS Controller
-    - Webcam Logitech C270
+  - Lidar (tba)
+  - ODOM Einstrahl-Echolot
+  - SBG Ellipse IMU
+  - Leica GNSS GS15
+  - Leica GNSS Controller
+  - Webcam Logitech C270
 - Industrie-PC
-- An Land
-    - FrSky Fernsteuerung
-    - Wlan-Antenne Mikrotik
-    - Laptop
+- Kontroll-Station
+  - FrSky Fernsteuerung
+  - Wlan-Antenne Mikrotik
+  - Laptop
 - Lade-Segment
-    - ISDT P30
-    - ISDT SP3060
-    - ISDT FD-200
+  - ISDT P30
+  - ISDT SP3060
+  - ISDT FD-200
 
 ### Anleitungen
+ - [Ladestrategie](docs/energy/charging.md)
+ - Akku laden
+ - Akku entladen
+
 ## Danksagung
-Vielen Dank für die eingeräumten Freiheiten, das Feedback und die praktische und technische Unterstützung an 
+
+Vielen Dank für die eingeräumten Freiheiten, das Feedback und die praktische und technische Unterstützung an
+
 - Harry Wirth,
-- Thorsten Roelfs, 
-- Stefan Scheidweiler und 
-- Tobias Berndt. 
+- Thorsten Roelfs,
+- Stefan Scheidweiler und
+- Tobias Berndt.
 
 ## Links
+
 ## Lizenz
+
 Der vollständige Lizenztext befindet sich in [LICENSE][1].
+
 ```
 Copyright (C) 2020 - 2021 Malte Biermann
 
@@ -67,4 +83,5 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program. If not, see <http://www.gnu.org/licenses/>.
 ```
+
 [1]: https://github.com/MalteBiermann/EchoBoat/LICENSE
