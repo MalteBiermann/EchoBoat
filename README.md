@@ -22,17 +22,16 @@ Ein manuell gesteuertes USV (Seafloor Echoboat) wird zu einem autonomen Fahrzeug
 ## Beschreibungen
 ### Komponenten
 - Steuerung
-  - FrySky Empfänger (Transmitter)
-  - Holybro Pixhawk 4
+  - [FrySky RX4R Empfänger](https://www.frsky-rc.com/product/rx4r/)
+  - [Holybro Pixhawk 4](http://www.holybro.com/product/pixhawk-4/)
 - Antrieb
-  - Holybro Power Module PM02 (2\*)
+  - [Holybro Power Module PM02 V2](http://www.holybro.com/product/power-modulepm02-v3/) (2\*)
   - ESC (2\*)
-  - Motore Bluerov Thruster T100 (2\*)
-- Energie
-  - LiPo 4S1P 14000mAh (2\*2) Turnigy für Antrieb
-  - LiPo 6S1P 22000mAh (2\*) Venom für Vermessung
+  - [Motore Bluerov Thruster T100](https://bluerobotics.com/store/retired/t100-thruster/) (2\*)
+- Akkus
+  - LiPo 4S1P 14000mAh Turnigy für Antrieb (2\*2)
+  - [LiPo 6S1P 22000mAh  Venom](https://www.venompower.com/venom-22000mah-6s-22-2v-drone-professional-battery-15c-lipo-with-xt150-as150-35000) für Vermessung (2\*)
 - Sensoren
-  - Lidar (tba)
   - ODOM Einstrahl-Echolot
   - SBG Ellipse IMU
   - Leica GNSS GS15
