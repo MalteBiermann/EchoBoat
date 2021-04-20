@@ -46,7 +46,7 @@ Busbar -r-> Wifi2
 PMstbd -left-> PH
 
 
-[Battery STBD] --up-> PMstbd
+[Battery STBD] -left-> PMstbd
 [Battery PS] -up-> ESCps
 [PMstbd] --> ESCstbd
 
