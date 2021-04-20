@@ -6,9 +6,7 @@ Ein manuell gesteuertes USV (Seafloor Echoboat) wird zu einem autonomen Fahrzeug
 
 ![Echoboat](./img/echoboat3.jpg)
 
-## Inhalt
-
-### Pläne
+## Pläne
 
 - [Übersicht](electrical_plans/overview/overview.md)
   - Stromverteilung
@@ -16,10 +14,13 @@ Ein manuell gesteuertes USV (Seafloor Echoboat) wird zu einem autonomen Fahrzeug
 - Steuerung
 - Sensoren
 
-### Beschreibungen
 
-#### Komponenten
-
+## Anleitungen
+ - [Ladestrategie](docs/energy/charging.md)
+ - Akku laden
+ - Akku entladen
+## Beschreibungen
+### Komponenten
 - Steuerung
   - FrySky Empfänger (Transmitter)
   - Holybro Pixhawk 4
@@ -47,10 +48,6 @@ Ein manuell gesteuertes USV (Seafloor Echoboat) wird zu einem autonomen Fahrzeug
   - ISDT SP3060
   - ISDT FD-200
 
-### Anleitungen
- - [Ladestrategie](docs/energy/charging.md)
- - Akku laden
- - Akku entladen
 
 ## Danksagung
 
