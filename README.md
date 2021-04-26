@@ -26,10 +26,10 @@ Ein manuell gesteuertes USV (Seafloor Echoboat) wird zu einem autonomen Fahrzeug
   - [Holybro Pixhawk 4](http://www.holybro.com/product/pixhawk-4/)
 - Antrieb
   - [Holybro Power Module PM02 V2](http://www.holybro.com/product/power-modulepm02-v3/) (2\*)
-  - ESC (2\*)
+  - ESC Quicrun WP8 BL150 (2\*)
   - [Motore Bluerov Thruster T100](https://bluerobotics.com/store/retired/t100-thruster/) (2\*)
 - Akkus
-  - LiPo 4S1P 14000mAh Turnigy für Antrieb (2\*2)
+  - [LiPo 4S1P 16000mAh Turnigy für Antrieb](https://hobbyking.com/de_de/turnigy-high-capacity-16000mah-4s-12c-multi-rotor-lipo-pack-w-xt90.html) (2\*2)
   - [LiPo 6S1P 22000mAh  Venom](https://www.venompower.com/venom-22000mah-6s-22-2v-drone-professional-battery-15c-lipo-with-xt150-as150-35000) für Vermessung (2\*)
 - Sensoren
   - ODOM Einstrahl-Echolot
