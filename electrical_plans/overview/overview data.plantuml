@@ -1,5 +1,5 @@
 @startuml
-title "EchoBoat Data Signals Overview"
+title "EchoBoat Data Distribution Overview"
 skinparam componentStyle rectangle
 skinparam linetype ortho
 
@@ -8,23 +8,19 @@ component "PC"
 component "SBES"
 component "GNSS"
 component "GNSS Controller" as GNSSC
-' component "IMU"
+component "IMU"
 ' component "LIDAR"
 ' component "GNSS 2" as GNSS2
 together {
 component "Power Module STBD" as PMstbd
 component "Power Module Bow" as PMbow
 }
-' component "Battery PS"
-' component "Battery STBD"
-' component "Battery Bow"
+
 component "Electronic Speed Controller PS" as ESCps
 component "Electronic Speed Controller STBD" as ESCstbd
-component "Motor PS"
-component "Motor STBD"
 component "RC Receiver" as RCtrans
 
-package "Control Station"{
+package "Ground Control Station"{
     component "Remote Controller" as RC
     component "Laptop"
     component "Wifi-Antenna 1" as Wifi1
@@ -34,36 +30,31 @@ component "Wifi-Antenna 2" as Wifi2
 RCtrans <-> PH
 RC <..down..> RCtrans
 
-Wifi1 <-left-> [Laptop]
+Wifi1 <-left-> Laptop
 Wifi1 <..> Wifi2
 Wifi2 <-down-> PC
 
 PMbow -left-> PH 
 
-
 PMstbd -left-> PH
 
+PH <-up-> PC
 
-PH <-up-> [PC]
+SBES -left-> PC
 
-[SBES] -left-> [PC]
-
-' IMU -down-> [PC]
 ' GNSS2 -d-> LIDAR
 ' LIDAR --> PC
 
-[GNSS] -> PH
-[GNSS] -> [PC]
-[GNSS] <.up.> GNSSC
+GNSS -> PH
+GNSS -> IMU
+IMU -> PC
+GNSS <.up.> GNSSC
 
 PH -down-> ESCps
 PH -down-> ESCstbd
 
 ' [Battery PS] -up-> ESCps
 ' [PMstbd] -right-> ESCstbd
-
-ESCps -down-> [Motor PS]
-ESCstbd -down-> [Motor STBD]
 
 ' hide @unlinked
 @enduml
