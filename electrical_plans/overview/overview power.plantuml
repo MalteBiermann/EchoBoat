@@ -6,7 +6,7 @@ skinparam linetype ortho
 component "Pixhawk 4" as PH
 component "PC"
 component "SBES"
-' component "IMU"
+component "IMU"
 ' component "LIDAR"
 ' component "GNSS 2" as GNSS2
 component "Power Module STBD" as PMstbd
@@ -39,12 +39,12 @@ Busbar -u-> PC
 Busbar -l-> SBES
 Busbar -r-> Wifi2
 
+PC -> IMU
+
 ' Busbar .> LIDAR
 ' Busbar .> GNSS2
-' Busbar .> IMU
 
 PMstbd -left-> PH
-
 
 [Battery STBD] -left-> PMstbd
 [Battery PS] -up-> ESCps
