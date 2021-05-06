@@ -9,7 +9,7 @@ Maximum|4.2V|16.8V|25.2V
 Lagerspannung|3.8V|15.2V|22.8V
 </br>
 
-Ladegeschwidigkeiten werden häufig in Relation zur Kapazität (C) angegeben. Die Akkus können problemlos mit 1C, also mit einer Stromstärke nahe ihrer Kapazität innerhalb von ca. 1 Stunde geladen werden (vgl. [Venom Specs](https://www.venompower.com/venom-22000mah-6s-22-2v-drone-professional-battery-15c-lipo-with-xt150-as150-35000)). Falls mehr Zeit vorhanden ist, sollte aber z.B. gegen 0.5C reduziert werden.  
+Ladegeschwidigkeiten werden häufig in Relation zur Kapazität (C) angegeben. Die Akkus können problemlos mit 1C, also mit einer Stromstärke nahe ihrer Kapazität innerhalb von ca. 1 Stunde geladen werden (vgl. [Venom Specs](https://www.venompower.com/venom-22000mah-6s-22-2v-drone-professional-battery-15c-lipo-with-xt150-as150-35000)). Falls mehr Zeit vorhanden ist, sollte aber der maximale Strom reduziert werden (z.B. gegen 0.5C).  
 
 Kapazität| 14000mAh | 22000mAhS
 ---|---|---
