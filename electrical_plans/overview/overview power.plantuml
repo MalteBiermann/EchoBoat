@@ -10,12 +10,12 @@ component "IMU"
 ' component "LIDAR"
 ' component "GNSS 2" as GNSS2
 component "Power Module STBD" as PMstbd
-component "Power Module Bow" as PMbow
+component "Power Module Bow" as PMBow
 component "Bus bar" as Busbar
 
-component "Battery PS"
-component "Battery STBD"
-component "Battery Bow"
+component "Battery PS" as BatPS
+component "Battery STBD" as BatSTBD
+component "Battery Bow" as BatBow
 
 together {
 component "Electronic Speed Controller PS" as ESCps
@@ -30,10 +30,10 @@ component "Wifi-Antenna 2" as Wifi2
 
 PH -l-> RCtrans
 
-[Battery Bow] -l-> PMbow
+BatBow -l-> PMBow
 
-PMbow -up-> Busbar
-PMbow -down-> PH
+PMBow -up-> Busbar
+PMBow -down-> PH
 
 Busbar -u-> PC
 Busbar -l-> SBES
@@ -46,9 +46,9 @@ PC -> IMU
 
 PMstbd -left-> PH
 
-[Battery STBD] -left-> PMstbd
-[Battery PS] -up-> ESCps
-[PMstbd] --> ESCstbd
+BatSTBD -left-> PMstbd
+BatPS -up-> ESCps
+PMstbd --> ESCstbd
 
 ESCps -down-> [Motor PS]
 ESCstbd -down-> [Motor STBD]
