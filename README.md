@@ -1,17 +1,16 @@
 # Dieses Repository ist in Bearbeitung! // Work in progress!
 
 # EchoBoat Dokumentation
-Dieses Repository enthält eine Darstellung der Systeme und Peripherie des Echoboats. Für den Betrieb in der Vermessung soll hier eine Sammlung relevanter Notizen, Anleitungen und Beschreibungen im Rahmen der Praxisphase des Studiums der angewandten Geodäsie an der Jade HS Oldenburg entstehen.   
-Ein manuell gesteuertes USV (Seafloor Echoboat) wird zu einem autonomen Fahrzeug (ASV) für bathymetrische Aufgaben umgerüstet. Das Seafloor Echoboat-160 ist eine Multi-Sensor Plattform für Bathymetrie / Gewässervermessung.
+Dieses Repository enthält eine Darstellung der Systeme und Peripherie des Echoboats. Für den Betrieb in der Vermessung soll hier eine Sammlung relevanter Notizen, Anleitungen und Beschreibungen entstehen.
+Ein manuell gesteuertes USV (Seafloor Echoboat 160) wird zu einem autonomen Fahrzeug (ASV) für bathymetrische Aufgaben umgerüstet. Das Seafloor Echoboat-160 ist eine Multi-Sensor Plattform für Bathymetrie / Gewässervermessung.
 
 ![Echoboat](./img/echoboat3.jpg)
 
 ## Pläne
-
 - [Übersicht](electrical_schemes/overview/overview.md)
-  - [Stromverteilung](electrical_schemes\overview\out\EchoBoat%20Power%20Distribution%20Overview.png) `[`[YAML](electrical_schemes\overview\overview_power.plantuml)`]`
-  - [Daten](electrical_schemes\overview\out\EchoBoat%20Data%20Distribution%20Overview.png) `[`[YAML](electrical_schemes\overview\overview_data.plantuml)`]`
-- Steuerung
+  - [Stromverteilung](electrical_schemes\overview\out\EchoBoat%20Power%20Distribution%20Overview.png) `[`[src](electrical_schemes\overview\overview_power.plantuml)`]`
+  - [Daten](electrical_schemes\overview\out\EchoBoat%20Data%20Distribution%20Overview.png) `[`[src](electrical_schemes\overview\overview_data.plantuml)`]`
+- [Steuerung](docs\remotecontrol\rc.md)
 - Sensoren
 
 
@@ -21,6 +20,8 @@ Ein manuell gesteuertes USV (Seafloor Echoboat) wird zu einem autonomen Fahrzeug
  - Akku entladen
 ## Beschreibungen
 ### Komponenten
+- Hülle
+  - [Seafloor Systems Echoboat 160](https://www.seafloorsystems.com/usv)
 - Steuerung
   - [FrySky RX4R Empfänger](https://www.frsky-rc.com/product/rx4r/)
   - [Holybro Pixhawk 4](http://www.holybro.com/product/pixhawk-4/)
