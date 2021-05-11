@@ -8,9 +8,9 @@ Ein manuell gesteuertes USV (Seafloor Echoboat) wird zu einem autonomen Fahrzeug
 
 ## Pläne
 
-- [Übersicht](electrical_plans/overview/overview.md)
-  - Stromverteilung
-  - Daten
+- [Übersicht](electrical_schemes/overview/overview.md)
+  - [Stromverteilung](electrical_schemes\overview\out\EchoBoat%20Power%20Distribution%20Overview.png) `[`[YAML](electrical_schemes\overview\overview_power.plantuml)`]`
+  - [Daten](electrical_schemes\overview\out\EchoBoat%20Data%20Distribution%20Overview.png) `[`[YAML](electrical_schemes\overview\overview_data.plantuml)`]`
 - Steuerung
 - Sensoren
 
