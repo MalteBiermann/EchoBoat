@@ -1,0 +1,15 @@
+"Industrial-PC"
+- Passiv gekühlt
+- Intel Core i7-6700TE
+    - 4C/8T
+    - 8MB L3 Cache
+    - TDP 35W
+- 8GB RAM
+- Win10 Pro 64bit
+- SSD Transcend SSD370S 
+    - 512GB
+    - SATA 
+- 4 Serielle Schnittstellen
+- Internes WLAN-Modul + Bluetooth
+    - RTL8821AE
+- 6 Ethernet Intel I210 Gigabit
