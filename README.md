@@ -15,12 +15,12 @@ Ein manuell gesteuertes USV (Seafloor Echoboat 160) wird zu einem autonomen Fahr
 
 
 ## Anleitungen
- - [Ladestrategie](docs/energy/charging.md)
- - Akku laden
+ - [Ladestrategie](docs/energy/basics.md)
+ - [Akku laden](docs\energy\charging.md)
  - Akku entladen
 ## Beschreibungen
 ### Komponenten
-- Hülle
+- Schiffskörper / Rumpf
   - [Seafloor Systems Echoboat 160](https://www.seafloorsystems.com/usv)
 - Steuerung
   - [FrySky RX4R Empfänger](https://www.frsky-rc.com/product/rx4r/)
@@ -38,9 +38,11 @@ Ein manuell gesteuertes USV (Seafloor Echoboat 160) wird zu einem autonomen Fahr
   - GNSS-Controller [Leica CS20](https://leica-geosystems.com/de-de/products/gnss-systems/controllers/leica-cs20)
   - Webcam Logitech C270
   - [Holybro Power Module PM02 V2](http://www.holybro.com/product/power-modulepm02-v3/) (2\*)
-- Industrie-PC
+- [Industrie-PC](docs\misc\pc-hardware.md)
+  - [Network](docs\misc\network.md)
+  - [Users](docs\misc\user.md)
 - Kontroll-Station
-  - [FrSky Taranis Q X7 ACCST](https://www.frsky-rc.com/product/taranis-q-x7-2/) Fernsteuerung
+  - Fernsteuerung [FrSky Taranis Q X7 ACCST](https://www.frsky-rc.com/product/taranis-q-x7-2/) 
   - Wlan-Antenne Mikrotik
   - Laptop
 - Lade-Segment
