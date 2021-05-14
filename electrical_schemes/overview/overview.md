@@ -1,5 +1,8 @@
-Übersichten Daten- und Stromverteilung
-===
-![Daten](out/EchoBoat%20Data%20Signals%20Overview.png)
+# Übersichten
+## Daten-Verteilung
+---
+![Daten](out/EchoBoat%20Data%20Distribution%20Overview.png)
+
+## Strom-Verteilung
 ---
 ![Daten](out/EchoBoat%20Power%20Distribution%20Overview.png)
