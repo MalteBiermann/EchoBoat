@@ -8,9 +8,9 @@ Ein manuell gesteuertes USV (Seafloor Echoboat 160) wird zu einem autonomen Fahr
 
 ## Pläne
 - [Übersicht](electrical_schemes/overview/overview.md)
-  - [Stromverteilung](electrical_schemes\overview\out\EchoBoat%20Power%20Distribution%20Overview.png) `[`[src](electrical_schemes\overview\overview_power.plantuml)`]`
-  - [Daten](electrical_schemes\overview\out\EchoBoat%20Data%20Distribution%20Overview.png) `[`[src](electrical_schemes\overview\overview_data.plantuml)`]`
-- [Steuerung](docs\remotecontrol\rc.md)
+  - [Stromverteilung](electrical_schemes/overview/out/EchoBoat%20Power%20Distribution%20Overview.png) `[`[src](electrical_schemes/overview/overview_power.plantuml)`]`
+  - [Daten](electrical_schemes/overview/out/EchoBoat%20Data%20Distribution%20Overview.png) `[`[src](electrical_schemes/overview/overview_data.plantuml)`]`
+- [Steuerung](docs/remotecontrol/rc.md)
 - Sensoren
 
 
