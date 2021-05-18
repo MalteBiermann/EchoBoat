@@ -38,9 +38,9 @@ Ein manuell gesteuertes USV (Seafloor Echoboat 160) wird zu einem autonomen Fahr
   - GNSS-Controller [Leica CS20](https://leica-geosystems.com/de-de/products/gnss-systems/controllers/leica-cs20)
   - Webcam Logitech C270
   - [Holybro Power Module PM02 V2](http://www.holybro.com/product/power-modulepm02-v3/) (2\*)
-- [Industrie-PC](docs\misc\pc-hardware.md)
-  - [Network](docs\misc\network.md)
-  - [Users](docs\misc\user.md)
+- [Industrie-PC](./docs/misc/pc-hardware.md)
+  - [Network](./docs/misc/network.md)
+  - [Users](./docs/misc/user.md)
 - Kontroll-Station
   - Fernsteuerung [FrSky Taranis Q X7 ACCST](https://www.frsky-rc.com/product/taranis-q-x7-2/) 
   - Wlan-Antenne Mikrotik
