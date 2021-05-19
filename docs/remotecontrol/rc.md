@@ -5,5 +5,5 @@ Hier entstehen Notizen zur Fernsteuerung FrSky Q X7 ACCST.
 - Frequenz
     - 2.4GHz
 - OS
-    - OpenTx
+    - [OpenTx](https://www.open-tx.org/)
         - [Config](docs\remotecontrol\opentx_config.otx)
