@@ -33,6 +33,7 @@ Ein manuell gesteuertes USV (Seafloor Echoboat 160) wird zu einem autonomen Fahr
   - LiPo [Venom 6S1P 22000mAh](https://www.venompower.com/venom-22000mah-6s-22-2v-drone-professional-battery-15c-lipo-with-xt150-as150-35000) für Vermessung (2\*)
 - Sensoren
   - SBES [Teledyne Marine ODOM Echotrac CV100](http://www.teledynemarine.com/singlebeam-hydrographic-echosounders)
+  - Schwinger [Airmar 191 (33 & 200 kHz)](./docs/misc/sensors/transducer.md)
   - IMU [SBG Ellipse E](https://www.sbg-systems.com/products/ellipse-series/#ellipse-e_miniature-ins)
   - GNSS Leica GS15
   - GNSS-Controller [Leica CS20](https://leica-geosystems.com/de-de/products/gnss-systems/controllers/leica-cs20)
