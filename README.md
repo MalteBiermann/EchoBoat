@@ -8,44 +8,45 @@ Ein manuell gesteuertes USV (Seafloor Echoboat 160) wird zu einem autonomen Fahr
 
 ## Pläne
 - [Übersicht](./electrical_schemes/overview/overview.md)
-  - [Stromverteilung](./electrical_schemes/overview/out/EchoBoat%20Power%20Distribution%20Overview.png) [`[`src`]`](./electrical_schemes/overview/overview_power.plantuml)
-  - [Daten](./electrical_schemes/overview/out/EchoBoat%20Data%20Distribution%20Overview.png) [`[`src`]`](./electrical_schemes/overview/overview_data.plantuml)
-- [Steuerung](./docs/remotecontrol/rc.md)
-- Sensoren
+  - [Stromverteilung](./electrical_schemes/overview/out/EchoBoat%20Power%20Distribution%20Overview.png)
+  - [Daten](./electrical_schemes/overview/out/EchoBoat%20Data%20Distribution%20Overview.png)
 
+- Sensoren
 
 ## Anleitungen
  - [Ladestrategie](docs/energy/basics.md)
  - [Akku laden](docs/energy/charging.md)
+ - [Steuerung](./docs/remotecontrol/rc.md)
  - Akku entladen
 ## Beschreibungen
 ### Komponenten
 - Schiffskörper / Rumpf
-  - [Seafloor Systems Echoboat 160](https://www.seafloorsystems.com/usv)
+  - Seafloor Systems Echoboat 160 [manufacturer link](https://www.seafloorsystems.com/usv)
 - Steuerung
-  - [FrySky RX4R Empfänger](https://www.frsky-rc.com/product/rx4r/)
-  - [Holybro Pixhawk 4](http://www.holybro.com/product/pixhawk-4/)
+  - FrySky RX4R Empfänger [manufacturer link](https://www.frsky-rc.com/product/rx4r/)
+  - Holybro Pixhawk 4 [manufacturer link](http://www.holybro.com/product/pixhawk-4/)
 - Antrieb
   - ESC Quicrun WP8 BL150 (2\*)
-  - Motore [Bluerov Thruster T100](https://bluerobotics.com/store/retired/t100-thruster/) (2\*)
+  - Motore Bluerov Thruster T100 (2\*) [manufacturer link](https://bluerobotics.com/store/retired/t100-thruster/) 
 - Akkus
-  - LiPo [Turnigy 4S1P 16000mAh](https://hobbyking.com/de_de/turnigy-high-capacity-16000mah-4s-12c-multi-rotor-lipo-pack-w-xt90.html) für Antrieb (2\*2)
-  - LiPo [Venom 6S1P 22000mAh](https://www.venompower.com/venom-22000mah-6s-22-2v-drone-professional-battery-15c-lipo-with-xt150-as150-35000) für Vermessung (2\*)
+  - LiPo Turnigy 4S1P 16000mAh für Antrieb (2\*2) [manufacturer link](https://hobbyking.com/de_de/turnigy-high-capacity-16000mah-4s-12c-multi-rotor-lipo-pack-w-xt90.html)
+  - LiPo Turnigy 6S1P 20000mAh für Vermessung (2\*) [manufacturer link](https://hobbyking.com/de_de/turnigy-high-capacity-16000mah-4s-12c-multi-rotor-lipo-pack-w-xt90.html)
+  - LiPo Venom 6S1P 22000mAh für Vermessung (2\*) [manufacturer link](https://www.venompower.com/venom-22000mah-6s-22-2v-drone-professional-battery-15c-lipo-with-xt150-as150-35000) 
 - Sensoren
-  - SBES [Teledyne Marine ODOM Echotrac CV100](http://www.teledynemarine.com/singlebeam-hydrographic-echosounders)
-  - Schwinger [Airmar 191 (33 & 200 kHz)](./docs/misc/sensors/transducer.md)
-  - IMU [SBG Ellipse E](https://www.sbg-systems.com/products/ellipse-series/#ellipse-e_miniature-ins)
+  - SBES Teledyne Marine ODOM Echotrac CV100 [manufacturer link](http://www.teledynemarine.com/singlebeam-hydrographic-echosounders)
+  - [Schwinger Airmar 191](./docs/sensors/transducer.md)
+  - IMU SBG Ellipse E [manufacturer link](https://www.sbg-systems.com/products/ellipse-series/#ellipse-e_miniature-ins)
   - GNSS Leica GS15
-  - GNSS-Controller [Leica CS20](https://leica-geosystems.com/de-de/products/gnss-systems/controllers/leica-cs20)
+  - GNSS-Controller Leica CS20 [manufacturer link](https://leica-geosystems.com/de-de/products/gnss-systems/controllers/leica-cs20)
   - Webcam Logitech C270
-  - [Holybro Power Module PM02 V2](http://www.holybro.com/product/power-modulepm02-v3/) (2\*)
+  - Holybro Power Module PM02 V2 (2\*) [manufacturer link](http://www.holybro.com/product/power-modulepm02-v3/) 
 - [Industrie-PC](./docs/misc/pc-hardware.md)
   - [Network](./docs/misc/network.md)
   - [Users](./docs/misc/user.md)
-- Kontroll-Station
-  - Fernsteuerung [FrSky Taranis Q X7 ACCST](https://www.frsky-rc.com/product/taranis-q-x7-2/) 
+- Ground Control Station
+  - [Fernsteuerung FrSky Taranis Q X7 ACCST](./docs/remotecontrol/rc.md) 
   - Wlan-Antenne Mikrotik
-  - Laptop
+  - [Laptop](./docs/misc/laptop-hardware.md) 
 - Lade-Segment
   - ISDT P30
   - ISDT SP3060
