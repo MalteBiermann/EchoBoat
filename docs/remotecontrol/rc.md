@@ -1,5 +1,4 @@
 # FrSky Q X7 ACCST Remote Control
-Hier entstehen Notizen zur Fernsteuerung FrSky Q X7 ACCST.
 - Akku
     - 6S NiMH
 - Frequenz
@@ -7,3 +6,4 @@ Hier entstehen Notizen zur Fernsteuerung FrSky Q X7 ACCST.
 - OS
     - [OpenTx](https://www.open-tx.org/)
         - [Config](docs\remotecontrol\opentx_config.otx)
+- [manufacturer link](https://www.frsky-rc.com/product/taranis-q-x7-2/) 
