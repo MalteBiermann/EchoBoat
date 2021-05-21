@@ -5,4 +5,4 @@ Airmar 191 Survey
 - 200 kHz
     - 6° beamwidth  
 
-[Manufacturer link](https://www.airmar.com/productdescription.html?id=134)
+[manufacturer link](https://www.airmar.com/productdescription.html?id=134)
