@@ -46,7 +46,7 @@ Ein manuell gesteuertes USV (Seafloor Echoboat 160) wird zu einem autonomen Fahr
 - Ground Control Station
   - [Fernsteuerung FrSky Taranis Q X7 ACCST](./docs/remotecontrol/rc.md) 
   - Wlan-Antenne Mikrotik
-  - [Laptop](./docs/misc/laptop-hardware.md) 
+  - [Laptop](./docs/misc/laptop.md) 
 - Lade-Segment
   - ISDT P30
   - ISDT SP3060
