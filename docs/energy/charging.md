@@ -1,5 +1,6 @@
 # Ladevorgang
 Aufgrund der teilweise hohen Ströme und der Charakteristika von LiPo-Akkus sind Ladevorgängen grundsätzlich **nicht unbeaufsichtigt** durchzuführen.  
+Das Ladegerät ISDT P30 kann bis zu 25A pro Kanal bereitstellen. 
 An das Safe Parallel Board dürfen nur Akkus mit gleicher Konfiguration (1S, 4S, 6S, ...) und gleicher Spannung angeschlossen werden.
 Bei Nutzung des Safe Parallel Board teilt sich der Strom entsprechend der Anzahl angeschlossen Akkus auf, was bei der Wahl der maximalen Stromstärke zu berücksichtigen ist. 
 ## Reihenfolge
