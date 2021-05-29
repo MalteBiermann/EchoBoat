@@ -1,10 +1,12 @@
-# Dieses Repository ist in Bearbeitung! // Work in progress!
-
 # EchoBoat Dokumentation
+## Beschreibung
 Dieses Repository enthält eine Darstellung der Systeme und Peripherie des Echoboats. Für den Betrieb in der Vermessung soll hier eine Sammlung relevanter Notizen, Anleitungen und Beschreibungen entstehen.
 Ein manuell gesteuertes USV (Seafloor Echoboat 160) wird zu einem autonomen Fahrzeug (ASV) für bathymetrische Aufgaben umgerüstet. Das Seafloor Echoboat-160 ist eine Multi-Sensor Plattform für Bathymetrie / Gewässervermessung.
 
-![Echoboat](./img/echoboat3.jpg)
+<!-- ![Echoboat](./img/echoboat3.jpg) -->
+<img src="./img/echoboat3.jpg" alt="Echoboat" width="400">
+<img src="./img/hypack-map.png" alt="Hypack map" width="400">
+<img src="./img/missionplanner.png" alt="Missionplanner" width="400">
 
 ## Pläne
 - [Übersicht](./electrical_schemes/overview/overview.md)
@@ -19,7 +21,7 @@ Ein manuell gesteuertes USV (Seafloor Echoboat 160) wird zu einem autonomen Fahr
  - [Steuerung](./docs/remotecontrol/rc.md)
  - Akku entladen
 ## Beschreibungen
-### Komponenten
+### Hardware
 - Schiffskörper / Rumpf
   - Seafloor Systems Echoboat 160 [manufacturer link](https://www.seafloorsystems.com/usv)
 - Steuerung
@@ -33,6 +35,7 @@ Ein manuell gesteuertes USV (Seafloor Echoboat 160) wird zu einem autonomen Fahr
   - LiPo Turnigy 6S1P 20000mAh für Vermessung (2\*) [manufacturer link](https://hobbyking.com/de_de/turnigy-high-capacity-16000mah-4s-12c-multi-rotor-lipo-pack-w-xt90.html)
   - LiPo Venom 6S1P 22000mAh für Vermessung (2\*) [manufacturer link](https://www.venompower.com/venom-22000mah-6s-22-2v-drone-professional-battery-15c-lipo-with-xt150-as150-35000) 
 - Sensoren
+  - ~~Lidar Velodyne VLP-32C / Ultra Puck [manufacturer link](https://velodynelidar.com/products/ultra-puck/)~~
   - SBES Teledyne Marine ODOM Echotrac CV100 [manufacturer link](http://www.teledynemarine.com/singlebeam-hydrographic-echosounders)
   - [Schwinger Airmar 191](./docs/sensors/transducer.md)
   - IMU SBG Ellipse E [manufacturer link](https://www.sbg-systems.com/products/ellipse-series/#ellipse-e_miniature-ins)
@@ -40,17 +43,27 @@ Ein manuell gesteuertes USV (Seafloor Echoboat 160) wird zu einem autonomen Fahr
   - GNSS-Controller Leica CS20 [manufacturer link](https://leica-geosystems.com/de-de/products/gnss-systems/controllers/leica-cs20)
   - Webcam Logitech C270
   - Holybro Power Module PM02 V2 (2\*) [manufacturer link](http://www.holybro.com/product/power-modulepm02-v3/) 
-- [Industrie-PC](./docs/misc/pc-hardware.md)
+- [Industrie-PC](./docs/misc/pc-hardware.md) onboard
   - [Network](./docs/misc/network.md)
   - [Users](./docs/misc/user.md)
 - Ground Control Station
   - [Fernsteuerung FrSky Taranis Q X7 ACCST](./docs/remotecontrol/rc.md) 
   - Wlan-Antenne Mikrotik
   - [Laptop](./docs/misc/laptop.md) 
-- Lade-Segment
+- Batterieladetechnik
   - ISDT P30
   - ISDT SP3060
   - ISDT FD-200
+
+### Software
+- ArduRover 4.1.0-dev [project link](https://ardupilot.org/rover/index.html)
+- OpenTX [project link](https://www.open-tx.org/)
+- Missionplanner [project link](https://ardupilot.org/planner/)
+- Xylem Hypack Ultralight [manufacurer link](https://www.hypack.com/product/id-HYPACK-ULTRALITE/HYPACK%c2%ae-ULTRALITE)
+- ~~QPS Qinsy~~
+- ~~QPS Qimera~~
+
+
 
 
 ## Danksagung
