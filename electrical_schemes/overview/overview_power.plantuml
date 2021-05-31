@@ -7,8 +7,8 @@ component "Pixhawk 4" as PH
 component "PC"
 component "SBES"
 component "IMU"
-' component "LIDAR"
-' component "GNSS 2" as GNSS2
+component "LIDAR"
+component "GNSS 2" as GNSS2
 component "Power Module STBD" as PMstbd
 component "Power Module Bow" as PMBow
 component "Bus bar" as Busbar
@@ -38,6 +38,8 @@ PMBow -down-> PH
 Busbar -u-> PC
 Busbar -l-> SBES
 Busbar -r-> Wifi2
+Busbar -> LIDAR
+Busbar -> GNSS2
 
 PC -> IMU
 

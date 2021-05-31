@@ -6,11 +6,17 @@ skinparam linetype ortho
 component "Pixhawk 4" as PH
 component "PC"
 component "SBES"
-component "GNSS"
-component "GNSS Controller" as GNSSC
+
+together {
+together {
+    component "GNSS 1" as GNSS1
+    component "GNSS Controller" as GNSSC
+}
+component "GNSS 2 PPSonly" as GNSS2
 component "IMU"
-' component "LIDAR"
-' component "GNSS 2" as GNSS2
+component "LIDAR"
+}
+
 together {
 component "Power Module STBD" as PMstbd
 component "Power Module Bow" as PMbow
@@ -32,23 +38,26 @@ RC <..down..> RCtrans
 
 Wifi1 <-left-> Laptop
 Wifi1 <..> Wifi2
-Wifi2 <-down-> PC
+Wifi2 <-right-> PC
 
 PMbow -left-> PH 
-
 PMstbd -left-> PH
 
 PH <-up-> PC
 
-SBES -left-> PC
+SBES -r-> PC
 
-' GNSS2 -d-> LIDAR
-' LIDAR --> PC
+IMU --> LIDAR
+LIDAR -> PC
+GNSS2 -> LIDAR
+GNSS2 -l-> IMU
 
-GNSS -> PH
-GNSS -> IMU
+
+GNSS1 <..> GNSSC
+GNSS1 --> IMU
+IMU -> PH
 IMU -> PC
-GNSS <.up.> GNSSC
+
 
 PH -down-> ESCps
 PH -down-> ESCstbd
