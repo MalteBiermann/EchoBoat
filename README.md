@@ -16,6 +16,7 @@ Für den Betrieb in der Vermessung soll hier eine Sammlung relevanter Notizen, A
 
 ## ROS
  - [Docker environment](./docs/ros_docker/docker.md)
+ - RosBag: IMU + GNSS Sample Data
 
 ## Configuration
 - [ArduRover](./docs/ardupilot/ardurover.md)
