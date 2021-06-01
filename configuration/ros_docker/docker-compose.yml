@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  myros:
+    build: .
+    network_mode: "host"
+    devices:
+      - "/dev/ttyUSB0:/dev/sbg"
+    volumes:
+      - "/home/hir0/ros_docker/catkin_ws:/root/catkin_ws"
+      - "/home/hir0/ros_docker/opt:/opt"
+
+    
+volumes:
+  catkin_ws:
+  opt:
+    
