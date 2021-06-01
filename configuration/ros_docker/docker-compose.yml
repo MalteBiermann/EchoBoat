@@ -4,9 +4,12 @@ services:
     build: .
     network_mode: "host"
     devices:
+      # for IMU
       - "/dev/ttyUSB0:/dev/sbg"
     volumes:
+      #  Adjust to your needs. Needed for persistent configuration.
       - "/home/hir0/ros_docker/catkin_ws:/root/catkin_ws"
+      #  Adjust to your needs. Needed for persistent configuration of sbg driver.
       - "/home/hir0/ros_docker/opt:/opt"
 
     
