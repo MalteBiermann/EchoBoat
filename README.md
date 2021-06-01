@@ -44,7 +44,7 @@ Für den Betrieb in der Vermessung soll hier eine Sammlung relevanter Notizen, A
   - FrySky RX4R Empfänger [manufacturer link](https://www.frsky-rc.com/product/rx4r/)
   - Holybro Pixhawk 4 [manufacturer link](http://www.holybro.com/product/pixhawk-4/)
 - Ground Control Station
-  - [Fernsteuerung FrSky Taranis Q X7 ACCST]() 
+  - FrSky Taranis Q X7 ACCST
   - Wlan-Antenne Mikrotik
   - Laptop
 - Propulsion
@@ -57,7 +57,7 @@ Für den Betrieb in der Vermessung soll hier eine Sammlung relevanter Notizen, A
 - Sensors
   - ~~Lidar Velodyne VLP-32C / Ultra Puck [manufacturer link](https://velodynelidar.com/products/ultra-puck/)~~
   - SBES Teledyne Marine ODOM Echotrac CV100 [manufacturer link](http://www.teledynemarine.com/singlebeam-hydrographic-echosounders)
-  - [Schwinger Airmar 191]()
+  - Schwinger Airmar 191
   - IMU SBG Ellipse E [manufacturer link](https://www.sbg-systems.com/products/ellipse-series/#ellipse-e_miniature-ins)
   - GNSS Leica GS15
   - GNSS-Controller Leica CS20 [manufacturer link](https://leica-geosystems.com/de-de/products/gnss-systems/controllers/leica-cs20)
