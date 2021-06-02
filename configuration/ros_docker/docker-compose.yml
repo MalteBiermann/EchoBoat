@@ -11,9 +11,4 @@ services:
       - "/home/hir0/ros_docker/catkin_ws:/root/catkin_ws"
       #  Adjust to your needs. Needed for persistent configuration of sbg driver.
       - "/home/hir0/ros_docker/opt:/opt"
-
-    
-volumes:
-  catkin_ws:
-  opt:
-    
+    tty: true
