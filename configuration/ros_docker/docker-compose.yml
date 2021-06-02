@@ -8,7 +8,7 @@ services:
       - "/dev/ttyUSB0:/dev/sbg"
     volumes:
       #  Adjust to your needs. Needed for persistent configuration.
-      - "/home/hir0/ros_docker/catkin_ws:/root/catkin_ws"
+      - "/home/hir0/ros_docker/root:/root"
       #  Adjust to your needs. Needed for persistent configuration of sbg driver.
-      - "/home/hir0/ros_docker/opt:/opt"
+      - "/home/hir0/ros_docker/sbg_driver/config:/opt/ros/melodic/lib/sbg_driver/config"
     tty: true
