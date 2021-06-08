@@ -10,13 +10,14 @@ Für den Betrieb in der Vermessung soll hier eine Sammlung relevanter Notizen, A
 <img src="./img/missionplanner.png" alt="Missionplanner" width="400">
 
 ## Schematics
-- [Power](./electrical_schemes/overview/out/EchoBoat%20Power%20Distribution%20Overview.png)
-- [Data](./electrical_schemes/overview/out/EchoBoat%20Data%20Distribution%20Overview.png)
+- [Power](./electrical_schemes/overview/out/EchoBoatPowerDistributionOverview.png)
+- [Data](./electrical_schemes/overview/out/EchoBoatDataDistributionOverview.png)
+- [Helm](./electrical_schemes/overview/out/EchoBoatHelmOverview.png)
 <!-- - Sensoren -->
 
 ## ROS
  - [Docker environment](./docs/ros_docker/docker.md)
- - RosBag: IMU + GNSS Sample Data
+ - [ROS](./docs/ros_docker/ros.md)
 
 ## Configuration
 - [ArduRover](./docs/ardupilot/ardurover.md)
@@ -63,7 +64,7 @@ Für den Betrieb in der Vermessung soll hier eine Sammlung relevanter Notizen, A
   - GNSS-Controller Leica CS20 [manufacturer link](https://leica-geosystems.com/de-de/products/gnss-systems/controllers/leica-cs20)
   - Webcam Logitech C270
   - Holybro Power Module PM02 V2 [manufacturer link](http://www.holybro.com/product/power-modulepm02-v3/) 
-- Industrial PC onboard
+- Embedded fanless PC onboard Nuvo 5006LP
 
 - Battery Charger
   - ISDT P30
