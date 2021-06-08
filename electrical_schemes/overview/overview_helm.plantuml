@@ -1,0 +1,56 @@
+@startuml
+title "EchoBoat Helm Overview"
+skinparam componentStyle rectangle
+' skinparam monochrome true
+' skinparam linetype ortho
+
+component "Pixhawk 4" as PH
+component "PC"
+
+component "LIDAR"
+
+together {
+together {
+    component "GNSS 1" as GNSS1
+}
+component "IMU"
+}
+
+component "Electronic Speed Controller PS" as ESCps
+component "Electronic Speed Controller STBD" as ESCstbd
+component "RC Receiver" as RCrec
+
+package "Ground Control Station"{
+    component "RC Transmitter" as RC
+    component "Laptop"
+}
+
+component "Motor PS" as Mps
+component "Motor STBD" as Mstbd
+
+RC <..down..> RCrec : Manual thrust control,\n mode, telemetry
+RCrec -> PH : Manual thrust control + mode
+
+Laptop <.> PC : Planned routes, telemetry
+
+note right of PH : Integrated IMU, EKF, PID
+
+PH <-up-> PC : Waypoints
+
+note left of PC : Software generating waypoints
+
+GNSS1 --> IMU : Position
+IMU -> PH : Position only
+IMU -> PC : Pose
+IMU -up-> LIDAR : Pose
+LIDAR -down-> PC
+
+PH -down-> ESCps : Thrust control
+PH -down-> ESCstbd : Thrust control
+
+
+ESCps -down-> Mps : Power
+ESCstbd -down-> Mstbd : Power
+
+' hide @unlinked
+@enduml
