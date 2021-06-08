@@ -1,8 +1,8 @@
 # EchoBoat Documentation
 In transition to english.
 ## Beschreibung
-Das Seafloor Echoboat-160 ist eine Multi-Sensor Plattform für Bathymetrie / Gewässervermessung. Das EchoBoat ist ein ursprünglich manuell gesteuertes **U**nmanned **S**urface **V**ehicle und wird zu einem autonomen Fahrzeug (**A**SV) umgerüstet.
-Für den Betrieb in der Vermessung soll hier eine Sammlung relevanter Notizen, Anleitungen und Beschreibungen entstehen.
+Das Seafloor Echoboat-160 ist eine mobile Multi-Sensor-Plattform für Bathymetrie / Gewässervermessung und zur Erprobung von Sensor-Kombinationen. Das EchoBoat ist ein ursprünglich manuell gesteuertes **U**nmanned **S**urface **V**ehicle und wird zu einem autonomen Fahrzeug (**A**SV) umgerüstet.
+Hier soll eine Sammlung relevanter Notizen, Anleitungen und Beschreibungen entstehen.
 
 <!-- ![Echoboat](./img/echoboat3.jpg) -->
 <img src="./img/echoboat3.jpg" alt="Echoboat" width="400">
@@ -10,10 +10,10 @@ Für den Betrieb in der Vermessung soll hier eine Sammlung relevanter Notizen, A
 <img src="./img/missionplanner.png" alt="Missionplanner" width="400">
 
 ## Schematics
-- [Power](./electrical_schemes/overview/out/EchoBoatPowerDistributionOverview.png)
-- [Data](./electrical_schemes/overview/out/EchoBoatDataDistributionOverview.png)
-- [Helm](./electrical_schemes/overview/out/EchoBoatHelmOverview.png)
-<!-- - Sensoren -->
+- [Power](./schemes/overview/out/EchoBoatPowerDistributionOverview.png)
+- [Data](./schemes/overview/out/EchoBoatDataDistributionOverview.png)
+- [Helm](./schemes/overview/out/EchoBoatHelmOverview.png)
+[<!-- - Sensoren -->]
 
 ## ROS
  - [Docker environment](./docs/ros_docker/docker.md)
