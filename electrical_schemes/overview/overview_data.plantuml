@@ -1,7 +1,7 @@
 @startuml
 title "EchoBoat Data Distribution Overview"
 skinparam componentStyle rectangle
-skinparam linetype ortho
+' skinparam linetype ortho
 
 component "Pixhawk 4" as PH
 component "PC"
@@ -40,24 +40,22 @@ Wifi1 <-left-> Laptop
 Wifi1 <..> Wifi2
 Wifi2 <-right-> PC
 
-PMbow -left-> PH 
-PMstbd -left-> PH
+PMbow -> PH 
+PMstbd -> PH
 
 PH <-up-> PC
 
-SBES -r-> PC
+SBES -> PC
 
 IMU --> LIDAR
 LIDAR -> PC
-GNSS2 -> LIDAR
+GNSS2 -l-> LIDAR
 GNSS2 -l-> IMU
 
-
-GNSS1 <..> GNSSC
+GNSS1 <.> GNSSC
 GNSS1 --> IMU
 IMU -> PH
 IMU -> PC
-
 
 PH -down-> ESCps
 PH -down-> ESCstbd
