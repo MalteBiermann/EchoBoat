@@ -13,7 +13,7 @@ Hier soll eine Sammlung relevanter Notizen, Anleitungen und Beschreibungen entst
 - [Power](./schemes/overview/out/EchoBoatPowerDistributionOverview.png)
 - [Data](./schemes/overview/out/EchoBoatDataDistributionOverview.png)
 - [Helm](./schemes/overview/out/EchoBoatHelmOverview.png)
-[<!-- - Sensoren -->]
+- [Sensors](./schemes/overview/out/EchoBoatSensorsOverview.png)
 
 ## ROS
  - [Docker environment](./docs/ros_docker/docker.md)
