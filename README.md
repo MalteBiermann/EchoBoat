@@ -1,4 +1,4 @@
-# EchoBoat Documentation
+# Project EchoBoat Documentation
 In transition to english.
 ## Beschreibung
 Das Seafloor Echoboat-160 ist eine mobile Multi-Sensor-Plattform für Bathymetrie / Gewässervermessung und zur Erprobung von Sensor-Kombinationen. Das EchoBoat ist ein ursprünglich manuell gesteuertes **U**nmanned **S**urface **V**ehicle und wird zu einem autonomen Fahrzeug (**A**SV) umgerüstet.
@@ -30,10 +30,10 @@ Hier soll eine Sammlung relevanter Notizen, Anleitungen und Beschreibungen entst
  - [Akku entladen](./docs/energy/discharging.md)
 
 ## Notes
-- [Schwinger Airmar 191](./docs/sensors/transducer.md)
-- [Remote Control FrSky Taranis Q X7 ACCST](./docs/remotecontrol/rc.md) 
-- [Industrial PC onboard](./docs/misc/pc-hardware.md)
-- [Laptop](./docs/misc/laptop.md) 
+- [Transducer Airmar 191](./docs/sensors/transducer.md)
+- [Remote Control FrSky Taranis Q X7 ACCST](./docs/remotecontrol/rc.md)
+- [Nuvo fanless PC onboard](./docs/misc/pc-hardware.md)
+- [Laptop](./docs/misc/laptop.md)
 - [Network](./docs/misc/network.md)
 - [Users](./docs/misc/user.md)
 
@@ -42,28 +42,28 @@ Hier soll eine Sammlung relevanter Notizen, Anleitungen und Beschreibungen entst
 - Hull
   - Seafloor Systems Echoboat 160 [manufacturer link](https://www.seafloorsystems.com/usv)
 - Control
-  - FrySky RX4R Empfänger [manufacturer link](https://www.frsky-rc.com/product/rx4r/)
+  - FrySky RX4R Receiver [manufacturer link](https://www.frsky-rc.com/product/rx4r/)
   - Holybro Pixhawk 4 [manufacturer link](http://www.holybro.com/product/pixhawk-4/)
 - Ground Control Station
   - FrSky Taranis Q X7 ACCST
-  - Wlan-Antenne Mikrotik
+  - Wifi-Antenna Mikrotik
   - Laptop
 - Propulsion
-  - ESC Quicrun WP8 BL150 
-  - Thruster Bluerov T100 [manufacturer link](https://bluerobotics.com/store/retired/t100-thruster/) 
+  - ESC Quicrun WP8 BL150
+  - Thruster Bluerov T100 [manufacturer link](https://bluerobotics.com/store/retired/t100-thruster/)
 - Batteries / LiPo
   - Turnigy 4S1P 16000mAh for propulsion [manufacturer link](https://hobbyking.com/de_de/turnigy-high-capacity-16000mah-4s-12c-multi-rotor-lipo-pack-w-xt90.html)
   - Turnigy 6S1P 20000mAh for survey [manufacturer link](https://hobbyking.com/de_de/turnigy-high-capacity-16000mah-4s-12c-multi-rotor-lipo-pack-w-xt90.html)
-  - Venom 6S1P 22000mAh for survey [manufacturer link](https://www.venompower.com/venom-22000mah-6s-22-2v-drone-professional-battery-15c-lipo-with-xt150-as150-35000) 
+  - Venom 6S1P 22000mAh for survey [manufacturer link](https://www.venompower.com/venom-22000mah-6s-22-2v-drone-professional-battery-15c-lipo-with-xt150-as150-35000)
 - Sensors
   - ~~Lidar Velodyne VLP-32C / Ultra Puck [manufacturer link](https://velodynelidar.com/products/ultra-puck/)~~
   - SBES Teledyne Marine ODOM Echotrac CV100 [manufacturer link](http://www.teledynemarine.com/singlebeam-hydrographic-echosounders)
-  - Schwinger Airmar 191
+  - Transducer Airmar 191
   - IMU SBG Ellipse E [manufacturer link](https://www.sbg-systems.com/products/ellipse-series/#ellipse-e_miniature-ins)
   - GNSS Leica GS15
   - GNSS-Controller Leica CS20 [manufacturer link](https://leica-geosystems.com/de-de/products/gnss-systems/controllers/leica-cs20)
   - Webcam Logitech C270
-  - Holybro Power Module PM02 V2 [manufacturer link](http://www.holybro.com/product/power-modulepm02-v3/) 
+  - Holybro Power Module PM02 V2 [manufacturer link](http://www.holybro.com/product/power-modulepm02-v3/)
 - Embedded fanless PC onboard Nuvo 5006LP
 
 - Battery Charger
