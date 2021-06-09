@@ -1,6 +1,6 @@
 # ROS Environment
 ## SBG_driver
-ROS driver package for communication with the SBG navigation systems
+ROS driver package for communication with the SBG navigation systems. [Github link](https://github.com/SBG-Systems/sbg_ros_driver)
 - Command
   ```
   roslaunch sbg_driver sbg_device.launch
@@ -16,7 +16,7 @@ ROS driver package for communication with the SBG navigation systems
     /imu/pos_ecef| Earth-Centered Earth_Fixed position  
     /imu/utc_ref| UTC time reference  
     /imu/nav_sat_fix| Navigation satellite  
-    /sbg/ekf_euler| SbgEkfEuler  
+    /sbg/ekf_euler| SbgEkfEuler
     /sbg/ekf_nav| SbgEkfNav  
     /sbg/ekf_quat| SbgEkfQuat  
     /sbg/gps_pos| SbgGpsPos  
@@ -29,12 +29,25 @@ ROS driver package for communication with the SBG navigation systems
     /sbg/ship_motion| SbgShipMotion
     /sbg/utc_time| SbgUtcTime
 ## MAVROS
-MAVLink extendable communication node for ROS with proxy for Ground Control Station
+MAVLink extendable communication node for ROS with proxy for Ground Control Station. [Github link](https://github.com/mavlink/mavros)
 - Command
   ```
-  roslaunch mavros apm.launch fcu_url:=udp://localhost
+  roslaunch mavros apm2.launch fcu_url:="udp://:14550@:14550"
   ```
-- Driver Output 
 
-## ROS bag files
-- [IMU + GNSS]
+## udp com
+It provides ROS Services for creating sockets, sending and receiving UDP data. [Github link](https://github.com/continental/udp_com)
+- Command
+  ```
+  roslaunch udp_com udp_com.launch
+  rosservice call /eth1/udp/create_socket "srcAddress: '0.0.0.0'
+  destAddress: '0.0.0.0'
+  port: 1600
+  isMulticast: false"
+
+  ```
+
+## ROS bag files containing sensor data
+- [IMU + GNSS](../../data/rosbag/sbg_driver)
+- [MAVROS](../../data/rosbag/mavros)
+- [UDP Com (SBES)](../../data/rosbag/udp_com)
