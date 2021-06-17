@@ -1,0 +1,45 @@
+@startuml
+title "EchoBoat Helm Pre-Modification Overview"
+skinparam componentStyle rectangle
+' skinparam monochrome true
+' skinparam linetype ortho
+
+component "PC"
+
+' component "LIDAR"
+
+together {
+together {
+    component "GNSS 1" as GNSS1
+}
+component "IMU"
+}
+
+component "Electronic Speed Controller PS" as ESCps
+component "Electronic Speed Controller STBD" as ESCstbd
+component "RC Receiver" as RCrec
+
+package "Ground Control Station"{
+    component "RC Transmitter" as RC
+    component "Laptop"
+}
+
+component "Thruster PS" as Mps
+component "Thruster STBD" as Mstbd
+
+RC <..down..> RCrec : Manual thrust control;\n mode; telemetry
+
+Laptop <.down.> PC : Telemetry
+
+GNSS1 -down-> IMU : Position
+IMU -left-> PC : Pose
+
+RCrec -down-> ESCps : PWM
+RCrec -down-> ESCstbd : PWM
+
+
+ESCps -down-> Mps : Power
+ESCstbd -down-> Mstbd : Power
+
+' hide @unlinked
+@enduml
