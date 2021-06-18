@@ -1,9 +1,24 @@
 - Echoboat
-    - Ethernet to Wifi-AP
-    - Port: Ethernet 7
-    - IP fixed: 192.168.1.8
-- Wifi
-    - SSID: Mikrotik
+    - Ethernet to WiFi-AP
+        - Port: Ethernet 7
+        - IP fixed: 10.0.0.8
+    - Ethernet Stern
+        - Port:
+        - IP: DHCP
+        - HRZ registered MAC
+    - Ethernet internal data net
+        - Port:
+        - IP fixed: 10.0.1.8
+        - -> SBES
 - Laptop
-    - IP fixed: 192.168.1.10
-    
+    - Wifi
+        - IP fixed: 10.0.0.10
+    - Ethernet
+        - IP fixed: 10.0.1.10
+        - HRZ registered MAC
+- Mikrotik WiFi onboard
+    - IP fixed: 10.0.0.1
+    - SSID: Mikrotik
+- Mikrotik WiFi Ground control station
+    - IP fixed: 10.0.0.2
+    - SSID: Mikrotik
