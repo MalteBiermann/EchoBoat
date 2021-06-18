@@ -1,0 +1,73 @@
+@startuml
+title "EchoBoat Sensor Interface Overview"
+skinparam componentStyle rectangle
+' skinparam linetype ortho
+
+package "SBES"{
+    () "Ethernet UDP 1600" as SBESUDP
+    () "RS-232" as SBESRS232
+}
+
+package "Pixhawk" {
+    component "PH_IMU" as PHIMU
+    () "RS-232 Telem1" as PHTelem1
+    () "RS-232 GNSS" as PHGPS
+    () "Power 1" as PHPM1
+    () "Power 2" as PHPM2
+}
+
+package "PC" {
+    () "RS-232 COM1" as PC1
+    () "RS-232 COM3" as PC3
+    () "RS-232 COM8" as PC8
+    () "RS-232 COM12" as PC12
+    () "Eth 3" as PCETHER3
+    () "Eth X" as PCETHERX
+}
+
+together {
+    component "Power Management Module 1" as PM1
+    component "Power Management Module 2" as PM2
+}
+
+package "PDGNSS 1" {
+    () "RS-232" as GNSS
+}
+
+package "GNSS 2" {
+    () "PPS" as PPS
+    () "RS-232" as GPRMC
+}
+
+package "SBG-IMU" {
+    () "RS-232 A" as SBGA
+    () "RS-232 B" as SBGB
+    () "RS-232 C" as SBGC
+    () "RS-232 D" as SBGD
+    () "Pulse" as SBGPPS
+}
+
+package "LIDAR" {
+    () "Eth" as LIDARETH
+    () "BNC" as LIDARPPS
+    () "RS-232" as LIDARGPS
+}
+
+SBESUDP -up-> PCETHER3
+SBESRS232 -up-> PC1
+PHTelem1 -down-> PC12 : MAVLink
+PM1 -down-> PHPM1 : Voltage + Current reading
+PM2 -down-> PHPM2 : Voltage + Current reading
+
+SBGA -down-> PC8 : Pose
+SBGB -up-> PHGPS : Position
+GNSS -down-> SBGC : Position
+
+PPS -down-> LIDARPPS : Pulse
+PPS -down-> SBGPPS : Pulse
+GPRMC -> LIDARGPS : GPRMC
+
+LIDARETH -> PCETHERX: UDP
+
+' hide @unlinked
+@enduml
