@@ -12,8 +12,9 @@ Hier soll eine Sammlung relevanter Notizen, Anleitungen und Beschreibungen entst
 ## Schematics
 - [Power](./schemes/overview/out/EchoBoatPowerDistributionOverview.png)
 - [Data](./schemes/overview/out/EchoBoatDataDistributionOverview.png)
+- [Helm Pre-Modification](./schemes/overview/out/EchoBoatHelmPre-ModificationOverview.png)
 - [Helm](./schemes/overview/out/EchoBoatHelmOverview.png)
-- [Sensors](./schemes/overview/out/EchoBoatSensorsOverview.png)
+- [Sensors](./schemes/overview/out/EchoBoatSensorInterfaceOverview.png)
 
 ## ROS
  - [Docker environment](./docs/ros_docker/docker.md)
@@ -58,7 +59,7 @@ Hier soll eine Sammlung relevanter Notizen, Anleitungen und Beschreibungen entst
 - Sensors
   - ~~Lidar Velodyne VLP-32C / Ultra Puck [manufacturer link](https://velodynelidar.com/products/ultra-puck/)~~
   - SBES Teledyne Marine ODOM Echotrac CV100 [manufacturer link](http://www.teledynemarine.com/singlebeam-hydrographic-echosounders)
-  - Transducer Airmar 191
+  - Transducer Airmar 191 [manufacturer link](https://www.airmar.com/productdescription.html?id=134)
   - IMU SBG Ellipse E [manufacturer link](https://www.sbg-systems.com/products/ellipse-series/#ellipse-e_miniature-ins)
   - GNSS Leica GS15
   - GNSS-Controller Leica CS20 [manufacturer link](https://leica-geosystems.com/de-de/products/gnss-systems/controllers/leica-cs20)
