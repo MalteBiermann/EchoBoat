@@ -19,8 +19,8 @@ package "Pixhawk" {
 package "PC" {
     () "RS-232 COM1" as PC1
     () "RS-232 COM3" as PC3
-    () "RS-232 COM8" as PC8
     () "RS-232 COM12" as PC12
+    () "RS-232 COM13" as PC13
     () "Eth 3" as PCETHER3
     () "Eth X" as PCETHERX
 }
@@ -41,9 +41,9 @@ package "GNSS 2" {
 
 package "SBG-IMU" {
     () "RS-232 A" as SBGA
-    () "RS-232 B" as SBGB
-    () "RS-232 C" as SBGC
-    () "RS-232 D" as SBGD
+    () "RS-232 C IN" as SBGCIN
+    () "RS-232 C OUT" as SBGCOUT
+    () "RS-232 E" as SBGD
     () "Pulse" as SBGPPS
 }
 
@@ -59,9 +59,10 @@ PHTelem1 -down-> PC12 : MAVLink
 PM1 -down-> PHPM1 : Voltage + Current reading
 PM2 -down-> PHPM2 : Voltage + Current reading
 
-SBGA -down-> PC8 : Pose
-SBGB -up-> PHGPS : Position
-GNSS -down-> SBGC : Position
+SBGA -down-> PC3 : Pose
+SBGCOUT -down-> PC13 : Position
+SBGCOUT -up-> PHGPS : Position
+GNSS -down-> SBGCIN : Position
 
 PPS -down-> LIDARPPS : Pulse
 PPS -down-> SBGPPS : Pulse
