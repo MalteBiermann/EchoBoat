@@ -22,22 +22,6 @@ component "Power Module STBD" as PMstbd
 component "Power Module Bow" as PMbow
 }
 
-' component "Electronic Speed Controller PS" as ESCps
-' component "Electronic Speed Controller STBD" as ESCstbd
-' component "RC Receiver" as RCtrans
-
-package "Ground Control Station"{
-    ' component "Remote Controller" as RC
-    component "Laptop"
-    component "Wifi-Antenna 1" as Wifi1
-}
-component "Wifi-Antenna 2" as Wifi2
-
-' RCtrans <-> PH
-
-Wifi1 <-left-> Laptop
-Wifi1 <...> Wifi2
-Wifi2 <-right-> PC
 
 PMbow -left-> PH 
 PMstbd -left-> PH
