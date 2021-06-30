@@ -1,0 +1,66 @@
+@startuml
+title "EchoBoat Sensors Overview"
+skinparam componentStyle rectangle
+' skinparam linetype ortho
+
+component "Pixhawk 4" as PH
+component "PC"
+component "SBES"
+
+together {
+together {
+    component "GNSS 1" as GNSS1
+    component "GNSS Controller" as GNSSC
+}
+component "GNSS 2 PPSonly" as GNSS2
+component "IMU"
+component "LIDAR"
+}
+
+together {
+component "Power Module STBD" as PMstbd
+component "Power Module Bow" as PMbow
+}
+
+' component "Electronic Speed Controller PS" as ESCps
+' component "Electronic Speed Controller STBD" as ESCstbd
+' component "RC Receiver" as RCtrans
+
+package "Ground Control Station"{
+    ' component "Remote Controller" as RC
+    component "Laptop"
+    component "Wifi-Antenna 1" as Wifi1
+}
+component "Wifi-Antenna 2" as Wifi2
+
+' RCtrans <-> PH
+
+Wifi1 <-left-> Laptop
+Wifi1 <...> Wifi2
+Wifi2 <-right-> PC
+
+PMbow -left-> PH 
+PMstbd -left-> PH
+
+PH <-up-> PC
+
+SBES -right-> PC
+
+
+LIDAR -down-> PC
+GNSS2 -down-> LIDAR
+GNSS2 -down-> IMU
+
+GNSS1 <.down.> GNSSC
+GNSS1 -down-> IMU
+IMU -> PH
+IMU -> PC
+
+' PH -down-> ESCps
+' PH -down-> ESCstbd
+
+' [Battery PS] -up-> ESCps
+' [PMstbd] -right-> ESCstbd
+
+' hide @unlinked
+@enduml
