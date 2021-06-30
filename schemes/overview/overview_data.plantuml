@@ -47,10 +47,10 @@ PH <-up-> PC
 
 SBES -> PC
 
-IMU --> LIDAR
+' IMU --> LIDAR
 LIDAR -> PC
 GNSS2 -l-> LIDAR
-GNSS2 -l-> IMU
+GNSS2 -u-> IMU
 
 GNSS1 <.> GNSSC
 GNSS1 --> IMU
