@@ -11,10 +11,11 @@ Hier soll eine Sammlung relevanter Notizen, Anleitungen und Beschreibungen entst
 
 ## Schematics
 - [Power](./schemes/overview/out/EchoBoatPowerDistributionOverview.png)
-- [Data](./schemes/overview/out/EchoBoatDataDistributionOverview.png)
+- [Data Distribution](./schemes/overview/out/EchoBoatDataDistributionOverview.png)
 - [Helm Pre-Modification](./schemes/overview/out/EchoBoatHelmPre-ModificationOverview.png)
 - [Helm](./schemes/overview/out/EchoBoatHelmOverview.png)
-- [Sensors](./schemes/overview/out/EchoBoatSensorInterfaceOverview.png)
+- [Sensor Interfaces](./schemes/overview/out/EchoBoatSensorInterfaceOverview.png)
+- [Sensors](./schemes/overview/out/EchoBoatSensorsOverview.png)
 
 ## ROS
  - [Docker environment](./docs/ros_docker/docker.md)
