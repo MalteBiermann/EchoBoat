@@ -1,4 +1,6 @@
 # Project EchoBoat Documentation
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
 In transition to english.
 ## Beschreibung
 Das Seafloor Echoboat-160 ist eine mobile Multi-Sensor-Plattform für Bathymetrie / Gewässervermessung und zur Erprobung von Sensor-Kombinationen. Das EchoBoat ist ein ursprünglich manuell gesteuertes **U**nmanned **S**urface **V**ehicle und wird zu einem autonomen Fahrzeug (**A**SV) umgerüstet.
@@ -17,10 +19,6 @@ Hier soll eine Sammlung relevanter Notizen, Anleitungen und Beschreibungen entst
 - [Sensor Interfaces](./schemes/overview/out/EchoBoatSensorInterfaceOverview.png)
 - [Sensors](./schemes/overview/out/EchoBoatSensorsOverview.png)
 
-## ROS
- - [Docker environment](./docs/ros_docker/docker.md)
- - [ROS](./docs/ros_docker/ros.md)
-
 ## Configuration
 - [ArduRover](./docs/ardupilot/ardurover.md)
 - [Remote Control](./docs/remotecontrol/rc.md)
@@ -30,6 +28,10 @@ Hier soll eine Sammlung relevanter Notizen, Anleitungen und Beschreibungen entst
  - [Akku laden](./docs/energy/charging.md)
  - [Steuerung](./docs/remotecontrol/rc.md)
  - [Akku entladen](./docs/energy/discharging.md)
+
+## ROS
+ - [Docker environment](./docs/ros_docker/docker.md)
+ - [ROS](./docs/ros_docker/ros.md)
 
 ## Notes
 - [Transducer Airmar 191](./docs/sensors/transducer.md)
@@ -58,7 +60,7 @@ Hier soll eine Sammlung relevanter Notizen, Anleitungen und Beschreibungen entst
   - Turnigy 6S1P 20000mAh for survey [manufacturer link](https://hobbyking.com/de_de/turnigy-high-capacity-16000mah-4s-12c-multi-rotor-lipo-pack-w-xt90.html)
   - Venom 6S1P 22000mAh for survey [manufacturer link](https://www.venompower.com/venom-22000mah-6s-22-2v-drone-professional-battery-15c-lipo-with-xt150-as150-35000)
 - Sensors
-  - ~~Lidar Velodyne VLP-32C / Ultra Puck [manufacturer link](https://velodynelidar.com/products/ultra-puck/)~~
+  - Lidar Velodyne VLP-32C / Ultra Puck [manufacturer link](https://velodynelidar.com/products/ultra-puck/)
   - SBES Teledyne Marine ODOM Echotrac CV100 [manufacturer link](http://www.teledynemarine.com/singlebeam-hydrographic-echosounders)
   - Transducer Airmar 191 [manufacturer link](https://www.airmar.com/productdescription.html?id=134)
   - IMU SBG Ellipse E [manufacturer link](https://www.sbg-systems.com/products/ellipse-series/#ellipse-e_miniature-ins)
@@ -78,8 +80,8 @@ Hier soll eine Sammlung relevanter Notizen, Anleitungen und Beschreibungen entst
 - OpenTX [project link](https://www.open-tx.org/)
 - Missionplanner [project link](https://ardupilot.org/planner/)
 - Xylem Hypack Ultralight [manufacurer link](https://www.hypack.com/product/id-HYPACK-ULTRALITE/HYPACK%c2%ae-ULTRALITE)
-- ~~QPS Qinsy~~
-- ~~QPS Qimera~~
+- QPS Qinsy
+- QPS Qimera
 
 
 ## Danksagung
@@ -97,21 +99,14 @@ Vielen Dank für die eingeräumten Freiheiten, das Feedback und die praktische u
 
 Der vollständige Lizenztext befindet sich in [LICENSE][1].
 
-```
-Copyright (C) 2020 - 2021 Malte Biermann
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][cc-by-nc-sa].
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-GNU General Public License for more details.
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
 
-You should have received a copy of the GNU General Public License
-along with this program. If not, see <http://www.gnu.org/licenses/>.
-```
 
 [1]: https://github.com/MalteBiermann/EchoBoat/LICENSE
