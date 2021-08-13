@@ -4,7 +4,7 @@
     - 4C/8T
     - 8MB L3 Cache
     - TDP 35W
-- 8GB RAM
+- 32GB RAM
 - Win10 Pro 64bit
 - SSD Transcend SSD370S 
     - 512GB
