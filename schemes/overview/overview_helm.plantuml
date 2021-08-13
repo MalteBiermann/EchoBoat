@@ -21,7 +21,7 @@ component "Electronic Speed Controller STBD" as ESCstbd
 component "RC Receiver" as RCrec
 
 package "Ground Control Station"{
-    component "RC Transmitter" as RC
+    component "Remote Controller" as RC
     component "Laptop"
 }
 
