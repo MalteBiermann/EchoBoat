@@ -1,5 +1,6 @@
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa] 
+![stability-wip](https://img.shields.io/badge/stability-work_in_progress-lightgrey.svg) 
 # Project EchoBoat Documentation
-[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
 
 In transition to english.
 ## Beschreibung
